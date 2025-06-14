@@ -1,14 +1,14 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/75mm_Type3_user_cannon.blkx
-ZoomIn:21.0
-ZoomOut:40.0
+ZoomIn:18.5
+ZoomOut:19.5
 
 Name:75mm_type1_ap
 Type:aphe_tank
-BulletMass:6.56
+BulletMass:6.605
 BallisticCaliber:0.075
 Speed:668.0
 Cx:0.4
-ExplosiveMass:0.053
+ExplosiveMass:0.065
 ExplosiveType:rdx
 demarrePenetrationK:0.9
 demarreSpeedPow:1.43

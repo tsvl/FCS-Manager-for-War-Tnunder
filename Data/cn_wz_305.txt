@@ -7,7 +7,7 @@ Type:apcbc_tank
 BulletMass:2.8
 BallisticCaliber:0.057
 Speed:1000.0
-Cx:0.38
+Cx:0.377
 ExplosiveMass:0.013
 ExplosiveType:a_ix_2
 demarrePenetrationK:1.0
@@ -20,8 +20,8 @@ Type:he_frag_tank
 BulletMass:2.8
 BallisticCaliber:0.057
 Speed:1000.0
-Cx:0.38
-ExplosiveMass:0.153
+Cx:0.377
+ExplosiveMass:0.159
 ExplosiveType:a_ix_2
 demarrePenetrationK:0.15
 demarreSpeedPow:1.43
@@ -33,7 +33,7 @@ Type:apcbc_tank
 BulletMass:2.8
 BallisticCaliber:0.057
 Speed:1000.0
-Cx:0.38
+Cx:0.377
 demarrePenetrationK:1.0
 demarreSpeedPow:1.43
 demarreMassPow:0.71
@@ -44,7 +44,7 @@ Type:apcbc_tank
 BulletMass:2.8
 BallisticCaliber:0.057
 Speed:1000.0
-Cx:0.38
+Cx:0.377
 ExplosiveMass:0.013
 ExplosiveType:a_ix_2
 demarrePenetrationK:1.0
@@ -57,7 +57,7 @@ Type:he_frag_radio_fuse
 BulletMass:2.8
 BallisticCaliber:0.057
 Speed:1012.0
-Cx:0.38
+Cx:0.377
 ExplosiveMass:0.29
 ExplosiveType:a_ix_2
 demarrePenetrationK:0.15

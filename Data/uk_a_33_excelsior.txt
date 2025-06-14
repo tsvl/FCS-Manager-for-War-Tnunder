@@ -36,7 +36,7 @@ ExplosiveMass:0.05
 ExplosiveType:smoke_composition
 DamageMass:0.15
 
-Name:75mm_m61
+Name:75mm_m61_solid
 Type:apcbc_solid_medium_caliber_tank
 BulletMass:6.53
 BallisticCaliber:0.075

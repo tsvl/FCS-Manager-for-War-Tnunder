@@ -15,7 +15,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:20mm_perforante_m35
+Name:20mm_perforante_m35_belt
 Type:ap_i_t
 BulletMass:0.14
 BallisticCaliber:0.02
@@ -28,7 +28,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:apcr_t/name/short
+Name:20mm_pzgr_40
 Type:apcr_t
 BulletMass:0.1
 BallisticCaliber:0.02

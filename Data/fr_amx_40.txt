@@ -28,13 +28,5 @@ Type:apds_fs_long_tank
 BulletMass:3.8
 BallisticCaliber:0.026
 Speed:1650.0
-Cx:0.33
+Cx:0.49
 DamageCaliber:0.026
-APDS0:394.0
-APDS100:393.0
-APDS500:388.0
-APDS1000:382.0
-APDS1500:376.0
-APDS2000:370.0
-APDS3000:357.0
-APDS10000:10.0

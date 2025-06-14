@@ -33,6 +33,10 @@ Speed:792.0
 Cx:0.38
 ExplosiveMass:0.92
 ExplosiveType:tnt
+demarrePenetrationK:0.15
+demarreSpeedPow:1.43
+demarreMassPow:0.71
+demarreCaliberPow:1.07
 
 Name:76mm_howitzer_shell_smoke
 Type:smoke_tank

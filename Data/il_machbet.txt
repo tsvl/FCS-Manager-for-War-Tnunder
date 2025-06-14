@@ -4,7 +4,7 @@ ZoomIn:12.2
 ZoomOut:12.3
 HasLaser
 
-Name:ap_i_t/name/short
+Name:20mm_m52a1
 Type:ap_i_t
 BulletMass:0.09962
 BallisticCaliber:0.02
@@ -17,7 +17,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:he_i_t/name/short
+Name:20mm_m242a1
 Type:he_i_t
 BulletMass:0.102
 BallisticCaliber:0.02
@@ -30,7 +30,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:ap_i/name/short
+Name:20mm_m53
 Type:ap_i
 BulletMass:0.09962
 BallisticCaliber:0.02
@@ -43,7 +43,7 @@ demarreCaliberPow:1.07
 
 Name:70mm_fim_92e
 Type:aam
-BulletMass:10.1
+BulletMass:2.0
 BallisticCaliber:0.07
 Speed:670.0
 Cx:0.38
@@ -52,7 +52,7 @@ ExplosiveType:hta
 
 Name:70mm_fim_92e
 Type:aam
-BulletMass:10.1
+BulletMass:2.0
 BallisticCaliber:0.07
 Speed:670.0
 Cx:0.38
@@ -61,7 +61,7 @@ ExplosiveType:hta
 
 Name:70mm_fim_92k
 Type:aam
-BulletMass:10.1
+BulletMass:2.0
 BallisticCaliber:0.07
 Speed:670.0
 Cx:0.38

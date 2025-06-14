@@ -1,6 +1,6 @@
-WeaponPath:gameData/Weapons/groundModels_weapons/105mm_M68_M60A1_user_cannon.blkx
+WeaponPath:gameData/Weapons/groundModels_weapons/105mm_M68_XM_user_cannon.blkx
 ZoomIn:9.21
-ZoomOut:10.0
+ZoomOut:28.63
 HasLaser
 
 Name:105mm_m728

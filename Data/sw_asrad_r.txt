@@ -4,30 +4,30 @@ ZoomOut:18.49
 
 Name:105mm_rb_70_2
 Type:sam_tank
-BulletMass:16.5
+BulletMass:2.0
 BallisticCaliber:0.105
 Speed:580.0
 Cx:0.38
-ExplosiveMass:1.1
+ExplosiveMass:0.522
 ExplosiveType:comp_b
 ArmorPower:200.0
 
 Name:105mm_rb_70_2
 Type:sam_tank
-BulletMass:16.5
+BulletMass:2.0
 BallisticCaliber:0.105
 Speed:580.0
 Cx:0.38
-ExplosiveMass:1.1
+ExplosiveMass:0.522
 ExplosiveType:comp_b
 ArmorPower:200.0
 
 Name:105mm_bolide
 Type:sam_tank
-BulletMass:17.0
+BulletMass:2.0
 BallisticCaliber:0.105
 Speed:700.0
 Cx:0.38
-ExplosiveMass:1.1
+ExplosiveMass:0.522
 ExplosiveType:comp_b
 ArmorPower:200.0

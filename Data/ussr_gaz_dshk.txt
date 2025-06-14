@@ -2,7 +2,7 @@ WeaponPath:gameData/Weapons/groundModels_weapons/12_7mm_DShK_GAZ_user_machinegun
 ZoomIn:21.0
 ZoomOut:40.0
 
-Name:he_i_ball/name/short
+Name:i_ball_mdz
 Type:he_i_ball
 BulletMass:0.04425
 BallisticCaliber:0.0127
@@ -15,7 +15,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:apcr_i_ball_bs41/name/short
+Name:apcr_i_ball_bs41
 Type:apcr_i_ball_bs41
 BulletMass:0.0538
 BallisticCaliber:0.0127
@@ -28,7 +28,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:apcr_i_ball_bs41/name/short
+Name:apcr_i_ball_bs41
 Type:apcr_i_ball_bs41
 BulletMass:0.0538
 BallisticCaliber:0.0127
@@ -41,7 +41,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:ap_i_t_ball/name/short
+Name:ap_i_t_ball_bzt_44
 Type:ap_i_t_ball
 BulletMass:0.0456
 BallisticCaliber:0.0127

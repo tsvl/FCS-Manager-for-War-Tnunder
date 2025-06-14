@@ -40,7 +40,7 @@ demarreCaliberPow:1.07
 
 Name:105mm_rokgr_m61
 Type:smoke_tank
-BulletMass:18.7
+BulletMass:19.6
 BallisticCaliber:0.105
 Speed:320.0
 Cx:0.68423

@@ -20,20 +20,12 @@ BallisticCaliber:0.025
 Speed:1640.0
 Cx:0.55
 DamageCaliber:0.025
-APDS0:481.0
-APDS100:478.0
-APDS500:470.0
-APDS1000:461.0
-APDS1500:450.0
-APDS2000:440.0
-APDS3000:430.0
-APDS10000:5.0
 
 Name:120mm_dm_11
 Type:he_frag_dist_fuse
 BulletMass:19.0
 BallisticCaliber:0.12
-Speed:970.0
+Speed:980.0
 Cx:0.66
 ExplosiveMass:3.0
 ExplosiveType:comp_b
@@ -47,13 +39,5 @@ Type:apds_fs_long_l30_tank
 BulletMass:4.0
 BallisticCaliber:0.022
 Speed:1660.0
-Cx:0.55
+Cx:0.611
 DamageCaliber:0.022
-APDS0:536.0
-APDS100:534.0
-APDS500:528.0
-APDS1000:521.0
-APDS1500:514.0
-APDS2000:507.0
-APDS3000:492.0
-APDS10000:5.0

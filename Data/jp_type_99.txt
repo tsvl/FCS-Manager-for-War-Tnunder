@@ -46,15 +46,19 @@ Speed:940.0
 Cx:0.38
 ExplosiveMass:6.98
 ExplosiveType:comp_b
+demarrePenetrationK:0.15
+demarreSpeedPow:1.43
+demarreMassPow:0.71
+demarreCaliberPow:1.07
 
-Name:155mm_type75
+Name:155mm_l15_a2
 Type:he_frag_tank
-BulletMass:43.6
+BulletMass:43.5
 BallisticCaliber:0.155
 Speed:940.0
 Cx:0.38
-ExplosiveMass:6.8
-ExplosiveType:tnt
+ExplosiveMass:11.3
+ExplosiveType:comp_b
 demarrePenetrationK:0.15
 demarreSpeedPow:1.43
 demarreMassPow:0.71

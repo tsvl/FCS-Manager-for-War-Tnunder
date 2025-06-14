@@ -33,14 +33,6 @@ BallisticCaliber:0.022
 Speed:1660.0
 Cx:0.843
 DamageCaliber:0.022
-APDS0:580.0
-APDS100:576.0
-APDS500:567.0
-APDS1000:555.0
-APDS1500:543.0
-APDS2000:532.0
-APDS3000:519.0
-APDS10000:5.0
 
 Name:125mm_3bm42
 Type:apds_fs_tungsten_caliber_fins_tank
@@ -62,7 +54,7 @@ Name:125mm_9m_119m1
 Type:atgm_tandem_tank
 BulletMass:17.2
 BallisticCaliber:0.125
-Speed:445.0
+Speed:470.0
 Cx:0.38
 ExplosiveMass:3.6
 ExplosiveType:ocfol

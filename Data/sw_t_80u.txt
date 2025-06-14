@@ -46,7 +46,7 @@ Name:125mm_9m_119
 Type:atgm_tank
 BulletMass:16.5
 BallisticCaliber:0.125
-Speed:445.0
+Speed:470.0
 Cx:0.38
 ExplosiveMass:3.6
 ExplosiveType:ocfol

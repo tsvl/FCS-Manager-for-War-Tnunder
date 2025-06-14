@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/120mm_SA_46_user_cannon.blkx
-ZoomIn:21.0
-ZoomOut:40.0
+ZoomIn:12.3
+ZoomOut:12.3
 
 Name:120mm_obus_de_rupture
 Type:apbc_usa_tank

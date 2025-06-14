@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/115mm_U5TS_T-62M1_user_cannon.blkx
 ZoomIn:9.21
-ZoomOut:10.21
+ZoomOut:21.1
 HasLaser
 
 Name:115mm_3bk_15m
@@ -31,16 +31,8 @@ Type:apds_fs_tungsten_l10_l15_tank
 BulletMass:4.88
 BallisticCaliber:0.035
 Speed:1600.0
-Cx:0.45
+Cx:0.55
 DamageCaliber:0.035
-APDS0:386.0
-APDS100:384.0
-APDS500:377.0
-APDS1000:369.0
-APDS1500:361.0
-APDS2000:352.0
-APDS3000:334.0
-APDS10000:50.0
 
 Name:115mm_3bm21
 Type:apds_fs_tungsten_small_core_tank

@@ -33,14 +33,6 @@ BallisticCaliber:0.028
 Speed:1730.0
 Cx:0.36933
 DamageCaliber:0.028
-APDS0:466.0
-APDS100:464.0
-APDS500:458.0
-APDS1000:450.0
-APDS1500:442.0
-APDS2000:434.0
-APDS3000:415.0
-APDS10000:5.0
 
 Name:125mm_dtc10_125
 Type:apds_fs_long_l30_tank
@@ -49,20 +41,12 @@ BallisticCaliber:0.0235
 Speed:1770.0
 Cx:0.71
 DamageCaliber:0.0235
-APDS0:576.8
-APDS100:574.7
-APDS500:565.9
-APDS1000:555.1
-APDS1500:544.3
-APDS2000:533.3
-APDS3000:511.7
-APDS10000:5.0
 
 Name:atgm_tandem_tank/name/short
 Type:atgm_tandem_tank
 BulletMass:19.0
 BallisticCaliber:0.125
-Speed:405.0
+Speed:470.0
 Cx:0.38
 ExplosiveMass:3.6
 ExplosiveType:ocfol

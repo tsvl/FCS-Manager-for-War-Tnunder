@@ -23,12 +23,16 @@ Speed:680.0
 Cx:0.43355
 ExplosiveMass:0.621
 ExplosiveType:tnt
+demarrePenetrationK:0.15
+demarreSpeedPow:1.43
+demarreMassPow:0.71
+demarreCaliberPow:1.07
 
 Name:76mm_br_354
 Type:aphe_tank
 BulletMass:6.5
 BallisticCaliber:0.0762
-Speed:662.0
+Speed:655.0
 Cx:0.38
 ExplosiveMass:0.032
 ExplosiveType:a_ix_2

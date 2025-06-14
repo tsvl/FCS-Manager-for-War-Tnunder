@@ -26,21 +26,13 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:125mm_3bm46
+Name:125mm_3bm60
 Type:apds_fs_long_l30_tank
-BulletMass:4.85
-BallisticCaliber:0.025
-Speed:1700.0
-Cx:0.53816
-DamageCaliber:0.025
-APDS0:532.0
-APDS100:531.0
-APDS500:526.0
-APDS1000:520.0
-APDS1500:513.0
-APDS2000:507.0
-APDS3000:494.0
-APDS10000:5.0
+BulletMass:5.12
+BallisticCaliber:0.022
+Speed:1660.0
+Cx:0.843
+DamageCaliber:0.022
 
 Name:125mm_3bm42
 Type:apds_fs_tungsten_caliber_fins_tank
@@ -58,12 +50,12 @@ APDS2000:406.0
 APDS3000:380.0
 APDS10000:5.0
 
-Name:125mm_9m_119
-Type:atgm_tank
-BulletMass:16.5
+Name:125mm_9m_119m1
+Type:atgm_tandem_tank
+BulletMass:17.2
 BallisticCaliber:0.125
-Speed:445.0
+Speed:470.0
 Cx:0.38
 ExplosiveMass:3.6
 ExplosiveType:ocfol
-ArmorPower:700.0
+ArmorPower:850.0

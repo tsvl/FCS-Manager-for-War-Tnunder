@@ -4,7 +4,7 @@ ZoomOut:19.49
 
 Name:75mm_pzgr_rot
 Type:apcbc_tank
-BulletMass:6.78
+BulletMass:6.8
 BallisticCaliber:0.075
 Speed:385.0
 Cx:0.5
@@ -46,7 +46,7 @@ Speed:450.0
 Cx:0.38
 ExplosiveMass:0.515
 ExplosiveType:h5
-ArmorPower:100.0
+ArmorPower:115.0
 
 Name:75mm_k_gr_rot_nb
 Type:smoke_tank

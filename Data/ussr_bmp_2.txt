@@ -1,5 +1,5 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/30mm_2A42_user_cannon.blkx
-RocketPath:gameData/Weapons/groundModels_weapons/125mm_9M113_rocket_launcher.blkx
+RocketPath:gameData/Weapons/groundModels_weapons/125mm_9m113_launcher_user_cannon.blkx
 ZoomIn:12.3
 ZoomOut:13.3
 
@@ -55,19 +55,21 @@ demarreCaliberPow:1.07
 
 Name:30mm_3ubr_11
 Type:apds_fs_long_tank
-BulletMass:0.101
+BulletMass:0.165
 BallisticCaliber:0.01
 Speed:1260.0
-Cx:0.15
+Cx:0.25
 DamageCaliber:0.01
-APDS0:101.9
-APDS100:99.0
-APDS500:94.0
-APDS1000:88.0
-APDS1500:81.0
-APDS2000:75.0
-APDS3000:62.0
-APDS10000:5.0
+
+Name:125mm_9M113
+Type:atgm_tank
+BulletMass:14.5
+BallisticCaliber:0.135
+Speed:248.0
+Cx:0.38
+ExplosiveMass:2.75
+ExplosiveType:ocfol
+ArmorPower:500.0
 
 Name:125mm_9M113
 Type:atgm_tank

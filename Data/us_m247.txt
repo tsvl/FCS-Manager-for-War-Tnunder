@@ -1,11 +1,11 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/40mm_M266_user_cannon.blkx
 ZoomIn:6.14
-ZoomOut:6.14
+ZoomOut:6.64
 HasLaser
 
 Name:40mm_m811
 Type:he_frag_i
-BulletMass:0.86
+BulletMass:0.87
 BallisticCaliber:0.04
 Speed:1100.0
 Cx:0.38
@@ -18,7 +18,7 @@ demarreCaliberPow:1.07
 
 Name:40mm_m811
 Type:he_frag_i
-BulletMass:0.86
+BulletMass:0.87
 BallisticCaliber:0.04
 Speed:1100.0
 Cx:0.38
@@ -31,7 +31,7 @@ demarreCaliberPow:1.07
 
 Name:40mm_m811_fuze_delay
 Type:sap_hei_tank
-BulletMass:0.86
+BulletMass:0.87
 BallisticCaliber:0.04
 Speed:1100.0
 Cx:0.38
@@ -44,7 +44,7 @@ demarreCaliberPow:1.07
 
 Name:40mm_m822
 Type:he_frag_radio_fuse
-BulletMass:0.86
+BulletMass:0.88
 BallisticCaliber:0.04
 Speed:1100.0
 Cx:0.38

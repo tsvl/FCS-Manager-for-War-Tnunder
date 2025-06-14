@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/163mm_vt_1_launcher_user_cannon.blkx
 ZoomIn:6.14
-ZoomOut:12.3
+ZoomOut:12.29
 
 Name:165mm_vt_1
 Type:sam_tank

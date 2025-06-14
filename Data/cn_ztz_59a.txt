@@ -59,7 +59,7 @@ Name:100mm_type1973
 Type:heat_fs_tank
 BulletMass:10.05
 BallisticCaliber:0.1
-Speed:1000.0
+Speed:955.0
 Cx:0.93
 ExplosiveMass:0.922
 ExplosiveType:rdx_tnt

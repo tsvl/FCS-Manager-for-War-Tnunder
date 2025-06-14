@@ -52,31 +52,23 @@ BallisticCaliber:0.009
 Speed:1385.0
 Cx:0.3
 DamageCaliber:0.009
-APDS0:92.0
-APDS100:90.0
-APDS500:83.0
-APDS1000:75.0
-APDS1500:62.0
-APDS2000:58.0
-APDS3000:43.0
-APDS10000:5.0
 
-Name:110mm_spike_mr
+Name:110mm_spike_lr2
 Type:atgm_tandem_tank
-BulletMass:13.0
+BulletMass:13.5
 BallisticCaliber:0.11
 Speed:180.0
 Cx:0.38
 ExplosiveMass:0.9
 ExplosiveType:lx14
-ArmorPower:700.0
+ArmorPower:900.0
 
-Name:110mm_spike_mr
+Name:110mm_spike_lr2
 Type:atgm_tandem_tank
-BulletMass:13.0
+BulletMass:13.5
 BallisticCaliber:0.11
 Speed:180.0
 Cx:0.38
 ExplosiveMass:0.9
 ExplosiveType:lx14
-ArmorPower:700.0
+ArmorPower:900.0

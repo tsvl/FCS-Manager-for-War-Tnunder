@@ -23,6 +23,10 @@ Speed:680.0
 Cx:0.43355
 ExplosiveMass:0.621
 ExplosiveType:tnt
+demarrePenetrationK:0.15
+demarreSpeedPow:1.43
+demarreMassPow:0.71
+demarreCaliberPow:1.07
 
 Name:76mm_br_350sp
 Type:apbc_tank

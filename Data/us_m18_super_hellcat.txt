@@ -7,7 +7,7 @@ Type:apbc_usa_tank
 BulletMass:10.91
 BallisticCaliber:0.09
 Speed:853.0
-Cx:0.38
+Cx:0.31857
 demarrePenetrationK:0.9
 demarreSpeedPow:1.43
 demarreMassPow:0.71

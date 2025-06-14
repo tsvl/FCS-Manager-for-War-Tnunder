@@ -8,17 +8,9 @@ Name:120mm_122tm_steel
 Type:apds_fs_full_body_steel_tank
 BulletMass:4.3
 BallisticCaliber:0.042
-Speed:1610.0
+Speed:1580.0
 Cx:0.395
 DamageCaliber:0.042
-APDS0:285.0
-APDS100:279.0
-APDS500:263.0
-APDS1000:243.0
-APDS1500:222.0
-APDS2000:202.0
-APDS3000:163.0
-APDS10000:10.0
 
 Name:120mm_122tm_he
 Type:he_frag_fs_tank
@@ -37,7 +29,7 @@ Name:120mm_122tm_tungsten
 Type:apds_fs_tungsten_small_core_tank
 BulletMass:4.3
 BallisticCaliber:0.042
-Speed:1610.0
+Speed:1580.0
 Cx:0.395
 DamageCaliber:0.042
 APDS0:350.0
@@ -61,7 +53,7 @@ Speed:1000.0
 Cx:0.85
 ExplosiveMass:1.35
 ExplosiveType:rdx_tnt
-ArmorPower:440.0
+ArmorPower:470.0
 
 Name:atgm_302
 Type:atgm_tank

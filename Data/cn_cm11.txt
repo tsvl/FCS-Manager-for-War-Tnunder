@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/105mm_M68A1_user_cannon.blkx
 ZoomIn:9.21
-ZoomOut:10.0
+ZoomOut:28.63
 HasLaser
 
 Name:105mm_m456a2
@@ -58,11 +58,3 @@ BallisticCaliber:0.024
 Speed:1455.0
 Cx:0.53008
 DamageCaliber:0.024
-APDS0:430.0
-APDS100:427.4
-APDS500:420.0
-APDS1000:409.3
-APDS1500:400.3
-APDS2000:390.2
-APDS3000:369.8
-APDS10000:5.0

@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/105mm_OTO_Melara_Mk_2_user_cannon.blkx
-ZoomIn:4.63
-ZoomOut:9.2
+ZoomIn:5.28
+ZoomOut:10.5
 HasLaser
 
 Name:105mm_m392a2
@@ -53,11 +53,3 @@ BallisticCaliber:0.033
 Speed:1455.0
 Cx:0.26763
 DamageCaliber:0.033
-APDS0:337.0
-APDS100:335.0
-APDS500:330.0
-APDS1000:322.0
-APDS1500:314.0
-APDS2000:306.0
-APDS3000:290.0
-APDS10000:10.0

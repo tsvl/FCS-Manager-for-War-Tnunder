@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/94mm_QQF_32pdr_user_cannon.blkx
-ZoomIn:21.0
-ZoomOut:40.0
+ZoomIn:12.3
+ZoomOut:24.8
 
 Name:94mm_shot_mk1
 Type:apcbc_solid_medium_caliber_tank
@@ -21,3 +21,7 @@ Speed:1043.0
 Cx:0.38
 ExplosiveMass:0.92
 ExplosiveType:tnt
+demarrePenetrationK:0.15
+demarreSpeedPow:1.43
+demarreMassPow:0.71
+demarreCaliberPow:1.07

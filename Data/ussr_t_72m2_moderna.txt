@@ -43,17 +43,9 @@ APDS4000:340.0
 APDS10000:10.0
 
 Name:125mm_tapna
-Type:apds_fs_tungsten_caliber_fins_tank
+Type:apds_fs_long_l30_tank
 BulletMass:3.7
 BallisticCaliber:0.022
 Speed:1690.0
 Cx:0.55
 DamageCaliber:0.022
-APDS0:508.9
-APDS100:507.1
-APDS500:500.0
-APDS1000:490.2
-APDS1500:481.3
-APDS2000:472.2
-APDS3000:453.0
-APDS10000:5.0

@@ -52,14 +52,6 @@ BallisticCaliber:0.009
 Speed:1385.0
 Cx:0.3
 DamageCaliber:0.009
-APDS0:92.0
-APDS100:90.0
-APDS500:83.0
-APDS1000:75.0
-APDS1500:62.0
-APDS2000:58.0
-APDS3000:43.0
-APDS10000:5.0
 
 Name:152mm_tow_2
 Type:atgm_tank
@@ -81,7 +73,7 @@ ExplosiveMass:3.13
 ExplosiveType:lx14
 ArmorPower:800.0
 
-Name:152mm_tow_2
+Name:152mm_tow_2a
 Type:atgm_tandem_tank
 BulletMass:22.63
 BallisticCaliber:0.152
@@ -91,7 +83,7 @@ ExplosiveMass:3.2
 ExplosiveType:lx14
 ArmorPower:800.0
 
-Name:152mm_tow_2
+Name:127mm_tow_2b
 Type:atgm_tank
 BulletMass:22.59
 BallisticCaliber:0.152

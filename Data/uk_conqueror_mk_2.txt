@@ -6,7 +6,7 @@ Name:120mm_l1g
 Type:apds_early_tank
 BulletMass:6.37
 BallisticCaliber:0.07
-Speed:1463.0
+Speed:1493.0
 Cx:0.22
 DamageMass:4.1
 DamageCaliber:0.07

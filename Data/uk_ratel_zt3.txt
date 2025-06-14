@@ -5,9 +5,9 @@ HasLaser
 
 Name:127mm_swift
 Type:atgm_tank
-BulletMass:26.0
+BulletMass:28.0
 BallisticCaliber:0.127
-Speed:240.0
+Speed:345.0
 Cx:0.38
 ExplosiveMass:2.8
 ExplosiveType:rdx_tnt
@@ -15,9 +15,9 @@ ArmorPower:650.0
 
 Name:127mm_swift
 Type:atgm_tank
-BulletMass:26.0
+BulletMass:28.0
 BallisticCaliber:0.127
-Speed:240.0
+Speed:345.0
 Cx:0.38
 ExplosiveMass:2.8
 ExplosiveType:rdx_tnt
@@ -27,7 +27,7 @@ Name:127mm_ingwe
 Type:atgm_tandem_tank
 BulletMass:28.5
 BallisticCaliber:0.127
-Speed:220.0
+Speed:342.0
 Cx:0.38
 ExplosiveMass:2.8
 ExplosiveType:rdx_tnt

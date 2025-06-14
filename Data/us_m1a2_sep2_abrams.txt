@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/120mm_M256_M1A2_user_cannon.blkx
-ZoomIn:7.37
-ZoomOut:24.7
+ZoomIn:5.67
+ZoomOut:24.744
 HasLaser
 
 Name:120mm_m830
@@ -20,14 +20,6 @@ BallisticCaliber:0.027
 Speed:1670.0
 Cx:0.46031
 DamageCaliber:0.027
-APDS0:491.0
-APDS100:488.0
-APDS500:481.0
-APDS1000:473.0
-APDS1500:464.0
-APDS2000:454.0
-APDS3000:435.0
-APDS10000:5.0
 
 Name:120mm_m830a1
 Type:heat_mp_vt_tank
@@ -35,7 +27,7 @@ BulletMass:11.4
 BallisticCaliber:0.08
 Speed:1410.0
 Cx:0.63402
-ExplosiveMass:1.38
+ExplosiveMass:0.966
 ExplosiveType:comp_a
 ArmorPower:350.0
 
@@ -46,12 +38,14 @@ BallisticCaliber:0.022
 Speed:1680.0
 Cx:0.76874
 DamageCaliber:0.022
-APDS0:629.0
-APDS100:627.0
-APDS500:619.0
-APDS1000:610.0
-APDS1500:601.0
-APDS2000:590.0
-APDS3000:570.0
-APDS4000:546.0
-APDS10000:5.0
+
+Name:120mm_m908
+Type:he_or_tank
+BulletMass:11.4
+BallisticCaliber:0.08
+Speed:1410.0
+Cx:0.63402
+ExplosiveMass:0.966
+ExplosiveType:comp_a
+DamageCaliber:0.08
+ArmorPower:300.0

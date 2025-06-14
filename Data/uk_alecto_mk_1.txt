@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/95mm_QF_Mk1_user_cannon.blkx
-ZoomIn:21.0
-ZoomOut:40.0
+ZoomIn:18.5
+ZoomOut:19.5
 
 Name:95mm_shell_heat
 Type:heat_tank

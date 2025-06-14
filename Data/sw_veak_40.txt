@@ -15,14 +15,14 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:40mm_slsgr_m484
-Type:he_frag_radio_fuse
-BulletMass:0.975
+Name:40mm_slsgr_m36c
+Type:he_frag_i_t
+BulletMass:1.0
 BallisticCaliber:0.04
-Speed:988.0
+Speed:850.0
 Cx:0.38
-ExplosiveMass:0.12
-ExplosiveType:torpex
+ExplosiveMass:0.044
+ExplosiveType:tnt
 demarrePenetrationK:0.15
 demarreSpeedPow:1.43
 demarreMassPow:0.71

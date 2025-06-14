@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/100mm_D10T2S_user_cannon.blkx
 ZoomIn:9.21
-ZoomOut:10.21
+ZoomOut:21.1
 HasLaser
 
 Name:100mm_zbm8

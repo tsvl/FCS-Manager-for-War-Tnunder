@@ -2,8 +2,8 @@ WeaponPath:gameData/Weapons/groundModels_weapons/20mm_Oerlikon_KAD_B17_user_cann
 ZoomIn:21.0
 ZoomOut:40.0
 
-Name:he_frag_i_t/name/short
-Type:he_frag_i_t
+Name:20mm_m594
+Type:he_i_t
 BulletMass:0.12
 BallisticCaliber:0.02
 Speed:1054.0
@@ -17,8 +17,8 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:he_frag_i_t/name/short
-Type:he_frag_i_t
+Name:20mm_m594
+Type:he_i_t
 BulletMass:0.12
 BallisticCaliber:0.02
 Speed:1054.0
@@ -30,7 +30,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:apcr_t/name/short
+Name:20mm_m601
 Type:apcr_t
 BulletMass:0.111
 BallisticCaliber:0.02

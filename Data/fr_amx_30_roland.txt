@@ -1,10 +1,10 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/163mm_roland_launcher_user_cannon.blkx
-ZoomIn:6.14
-ZoomOut:12.3
+ZoomIn:6.14111
+ZoomOut:9.21719
 
 Name:163mm_roland_1
 Type:sam_tank
-BulletMass:65.0
+BulletMass:2.0
 BallisticCaliber:0.163
 Speed:500.0
 Cx:0.38
@@ -13,7 +13,7 @@ ExplosiveType:comp_b
 
 Name:163mm_roland_1
 Type:sam_tank
-BulletMass:65.0
+BulletMass:2.0
 BallisticCaliber:0.163
 Speed:500.0
 Cx:0.38
@@ -22,7 +22,7 @@ ExplosiveType:comp_b
 
 Name:163mm_roland_3
 Type:sam_tank
-BulletMass:77.0
+BulletMass:2.0
 BallisticCaliber:0.163
 Speed:570.0
 Cx:0.38

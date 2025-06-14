@@ -5,30 +5,30 @@ ZoomIn:6.14
 ZoomOut:18.5
 HasLaser
 
-Name:25mm_pgu_25_u
-Type:he_i
-BulletMass:0.185
+Name:25mm_pgu_20_u
+Type:apcr
+BulletMass:0.214
 BallisticCaliber:0.025
-Speed:1085.0
+Speed:1036.0
 Cx:0.375
-ExplosiveMass:0.032
-ExplosiveType:hexal
+ExplosiveMass:0.016
+ExplosiveType:rdx_tnt
 DamageMass:0.148
 DamageCaliber:0.011
-demarrePenetrationK:0.15
+demarrePenetrationK:0.8
 demarreSpeedPow:1.43
-demarreMassPow:0.71
-demarreCaliberPow:1.07
+demarreMassPow:0.89
+demarreCaliberPow:0.96
 
-Name:25mm_pgu_25_u
-Type:he_i
+Name:25mm_pgu_32
+Type:sap_hei_t
 BulletMass:0.185
 BallisticCaliber:0.025
-Speed:1085.0
+Speed:1100.0
 Cx:0.375
-ExplosiveMass:0.032
-ExplosiveType:hexal
-demarrePenetrationK:0.15
+ExplosiveMass:0.016
+ExplosiveType:rdx_tnt
+demarrePenetrationK:0.52
 demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
@@ -48,7 +48,7 @@ demarreCaliberPow:0.96
 
 Name:70mm_fim_92e
 Type:aam
-BulletMass:10.1
+BulletMass:2.0
 BallisticCaliber:0.07
 Speed:670.0
 Cx:0.38
@@ -57,7 +57,7 @@ ExplosiveType:hta
 
 Name:70mm_fim_92e
 Type:aam
-BulletMass:10.1
+BulletMass:2.0
 BallisticCaliber:0.07
 Speed:670.0
 Cx:0.38
@@ -66,7 +66,7 @@ ExplosiveType:hta
 
 Name:70mm_fim_92k
 Type:aam
-BulletMass:10.1
+BulletMass:2.0
 BallisticCaliber:0.07
 Speed:670.0
 Cx:0.38
@@ -75,7 +75,7 @@ ExplosiveType:hta
 
 Name:70mm_fim_92e
 Type:aam
-BulletMass:10.1
+BulletMass:2.0
 BallisticCaliber:0.07
 Speed:670.0
 Cx:0.38
@@ -84,7 +84,7 @@ ExplosiveType:hta
 
 Name:70mm_fim_92e
 Type:aam
-BulletMass:10.1
+BulletMass:2.0
 BallisticCaliber:0.07
 Speed:670.0
 Cx:0.38
@@ -93,7 +93,7 @@ ExplosiveType:hta
 
 Name:70mm_fim_92k
 Type:aam
-BulletMass:10.1
+BulletMass:2.0
 BallisticCaliber:0.07
 Speed:670.0
 Cx:0.38

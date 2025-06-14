@@ -62,15 +62,14 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:120mm_l37a7
-Type:hesh_tank
-BulletMass:17.34
-BallisticCaliber:0.12
-Speed:670.0
-Cx:0.70234
-ExplosiveMass:4.08
-ExplosiveType:rdx
-ArmorPower:152.0
+Name:178mm_hedgehog_projectile
+Type:rocket_tank
+BulletMass:29.5
+BallisticCaliber:0.178
+Speed:340.0
+Cx:0.38
+ExplosiveMass:15.8
+ExplosiveType:torpex
 
 Name:178mm_hedgehog_projectile
 Type:rocket_tank

@@ -60,7 +60,7 @@ APDS10000:10.0
 
 Name:125mm_9m_112
 Type:atgm_tank
-BulletMass:27.5
+BulletMass:25.9
 BallisticCaliber:0.125
 Speed:400.0
 Cx:0.38

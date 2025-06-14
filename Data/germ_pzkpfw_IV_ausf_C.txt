@@ -4,7 +4,7 @@ ZoomOut:40.0
 
 Name:75mm_pzgr_rot
 Type:apcbc_tank
-BulletMass:6.78
+BulletMass:6.8
 BallisticCaliber:0.075
 Speed:385.0
 Cx:0.5

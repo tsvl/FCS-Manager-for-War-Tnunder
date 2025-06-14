@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/76mm_17pdr_QF_open_turret_user_cannon.blkx
-ZoomIn:21.0
-ZoomOut:40.0
+ZoomIn:12.3
+ZoomOut:24.7
 
 Name:76mm_shot_mk6_ap
 Type:ap_tank

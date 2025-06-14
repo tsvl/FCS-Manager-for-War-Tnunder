@@ -41,7 +41,7 @@ demarreCaliberPow:1.07
 
 Name:76mm_m93
 Type:apcr_tank
-BulletMass:4.22
+BulletMass:4.24
 BallisticCaliber:0.0762
 Speed:1036.0
 Cx:0.28

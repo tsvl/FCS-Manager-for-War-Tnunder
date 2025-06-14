@@ -6,7 +6,7 @@ Name:76mm_shot_mk6_ap
 Type:ap_tank
 BulletMass:7.71
 BallisticCaliber:0.0762
-Speed:754.0
+Speed:784.86
 Cx:0.4
 demarrePenetrationK:0.9
 demarreSpeedPow:1.43
@@ -17,7 +17,7 @@ Name:76mm_shell_mk1_he
 Type:he_frag_tank
 BulletMass:6.98
 BallisticCaliber:0.0762
-Speed:754.0
+Speed:495.3
 Cx:0.38
 ExplosiveMass:0.58
 ExplosiveType:tnt
@@ -30,7 +30,7 @@ Name:76mm_shot_mk4_apc
 Type:apc_solid_medium_caliber_tank
 BulletMass:7.71
 BallisticCaliber:0.0762
-Speed:754.0
+Speed:784.86
 Cx:0.4
 demarrePenetrationK:0.9
 demarreSpeedPow:1.43
@@ -41,7 +41,7 @@ Name:76mm_shot_mk8_apcbc
 Type:apcbc_solid_medium_caliber_tank
 BulletMass:7.71
 BallisticCaliber:0.0762
-Speed:754.0
+Speed:784.86
 Cx:0.4
 demarrePenetrationK:1.0
 demarreSpeedPow:1.43
@@ -52,7 +52,7 @@ Name:76mm_shot_sv_mk1_apds
 Type:apds_early_tank
 BulletMass:2.476614
 BallisticCaliber:0.04953
-Speed:1035.32
+Speed:1036.32
 Cx:0.25759
 DamageMass:1.737259
 DamageCaliber:0.04953
@@ -60,11 +60,3 @@ demarrePenetrationK:1.32
 demarreSpeedPow:1.43
 demarreMassPow:0.739
 demarreCaliberPow:1.07
-APDS0:220.0
-APDS100:216.0
-APDS500:199.0
-APDS1000:179.0
-APDS1500:159.0
-APDS2000:139.0
-APDS3000:98.0
-APDS10000:0.0

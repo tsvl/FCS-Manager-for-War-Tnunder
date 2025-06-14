@@ -15,7 +15,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:88mm_sprgr
+Name:88mm_sprgr_dist_fuse
 Type:he_frag_dist_fuse
 BulletMass:9.0
 BallisticCaliber:0.088

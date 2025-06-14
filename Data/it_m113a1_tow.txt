@@ -2,7 +2,7 @@ WeaponPath:gameData/Weapons/groundModels_weapons/127mm_bgm_71b_tow_rocket_launch
 ZoomIn:9.217
 ZoomOut:18.494
 
-Name:127_bgm_71_TOW
+Name:127_bgm_71_tow
 Type:atgm_tank
 BulletMass:18.82
 BallisticCaliber:0.127

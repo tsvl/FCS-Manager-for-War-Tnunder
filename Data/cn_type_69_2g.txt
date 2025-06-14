@@ -23,6 +23,19 @@ ExplosiveMass:2.99371
 ExplosiveType:comp_a
 ArmorPower:127.0
 
+Name:105mm_btm_1
+Type:sapcbc_tank
+BulletMass:16.2
+BallisticCaliber:0.105
+Speed:803.0
+Cx:0.38
+ExplosiveMass:1.5
+ExplosiveType:a_ix_2
+demarrePenetrationK:0.65
+demarreSpeedPow:1.43
+demarreMassPow:0.71
+demarreCaliberPow:1.07
+
 Name:105mm_TYPE83_APDS
 Type:apds_fs_tungsten_l10_l15_tank
 BulletMass:4.2
@@ -30,14 +43,6 @@ BallisticCaliber:0.033
 Speed:1500.0
 Cx:0.26763
 DamageCaliber:0.033
-APDS0:351.0
-APDS100:349.0
-APDS500:343.0
-APDS1000:336.0
-APDS1500:328.0
-APDS2000:321.0
-APDS3000:298.0
-APDS10000:10.0
 
 Name:105mm_dtb_1_he
 Type:he_frag_radio_fuse

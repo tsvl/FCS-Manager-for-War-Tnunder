@@ -9,14 +9,6 @@ BallisticCaliber:0.04
 Speed:1570.0
 Cx:0.305
 DamageCaliber:0.04
-APDS0:292.9
-APDS100:287.9
-APDS500:275.4
-APDS1000:258.6
-APDS1500:240.9
-APDS2000:223.8
-APDS3000:190.8
-APDS10000:10.0
 
 Name:90mm_t320
 Type:apds_fs_full_body_steel_tank
@@ -25,14 +17,6 @@ BallisticCaliber:0.04
 Speed:1570.0
 Cx:0.305
 DamageCaliber:0.04
-APDS0:292.9
-APDS100:287.9
-APDS500:275.4
-APDS1000:258.6
-APDS1500:240.9
-APDS2000:223.8
-APDS3000:190.8
-APDS10000:10.0
 
 Name:90mm_t340e14h
 Type:he_frag_tank

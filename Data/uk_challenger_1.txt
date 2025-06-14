@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/120mm_L11A5_Mk3_user_cannon.blkx
-ZoomIn:7.37
-ZoomOut:10.54
+ZoomIn:6.4
+ZoomOut:18.5
 HasLaser
 
 Name:120mm_l23
@@ -50,11 +50,3 @@ BallisticCaliber:0.029
 Speed:1535.0
 Cx:0.34982
 DamageCaliber:0.029
-APDS0:396.0
-APDS100:394.0
-APDS500:387.0
-APDS1000:376.0
-APDS1500:367.0
-APDS2000:357.0
-APDS3000:345.0
-APDS10000:10.0

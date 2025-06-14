@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/90mm_Kanone_M41_user_cannon.blkx
 ZoomIn:9.2
-ZoomOut:11.0
+ZoomOut:12.3
 
 Name:90mm_m332
 Type:apcr_tank
@@ -45,7 +45,7 @@ BallisticCaliber:0.09
 Speed:821.0
 Cx:0.38
 ExplosiveMass:0.05
-ExplosiveType:tnt
+ExplosiveType:smoke_composition
 
 Name:90mm_dm502
 Type:hesh_tank

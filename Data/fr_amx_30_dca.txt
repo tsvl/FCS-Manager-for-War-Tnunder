@@ -8,7 +8,7 @@ Type:he_i_t
 BulletMass:0.36
 BallisticCaliber:0.03
 Speed:1080.0
-Cx:0.38
+Cx:0.26345
 ExplosiveMass:0.05
 ExplosiveType:hexal
 demarrePenetrationK:0.15
@@ -21,7 +21,7 @@ Type:sapi
 BulletMass:0.36
 BallisticCaliber:0.03
 Speed:1080.0
-Cx:0.38
+Cx:0.26345
 ExplosiveMass:0.018
 ExplosiveType:hexal
 demarrePenetrationK:0.9
@@ -34,7 +34,7 @@ Type:sapi
 BulletMass:0.36
 BallisticCaliber:0.03
 Speed:1080.0
-Cx:0.38
+Cx:0.26345
 ExplosiveMass:0.018
 ExplosiveType:hexal
 demarrePenetrationK:0.9
@@ -47,7 +47,7 @@ Type:he_i_t
 BulletMass:0.36
 BallisticCaliber:0.03
 Speed:1080.0
-Cx:0.38
+Cx:0.26345
 ExplosiveMass:0.05
 ExplosiveType:hexal
 demarrePenetrationK:0.15

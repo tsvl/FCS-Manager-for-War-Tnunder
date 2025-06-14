@@ -4,38 +4,38 @@ ZoomOut:40.0
 
 Name:90mm_occ_90_62
 Type:heat_fs_tank
-BulletMass:8.95
+BulletMass:3.65
 BallisticCaliber:0.09
-Speed:750.0
+Speed:800.0
 Cx:0.38
 ExplosiveMass:0.67
 ExplosiveType:comp_b
-ArmorPower:320.0
+ArmorPower:350.0
 
 Name:90mm_occ_90_62
 Type:heat_fs_tank
-BulletMass:8.95
+BulletMass:3.65
 BallisticCaliber:0.09
-Speed:750.0
+Speed:800.0
 Cx:0.38
 ExplosiveMass:0.67
 ExplosiveType:comp_b
-ArmorPower:320.0
+ArmorPower:350.0
 
 Name:90mm_ofum_ph90
 Type:smoke_tank
-BulletMass:10.2
+BulletMass:5.4
 BallisticCaliber:0.09
-Speed:640.0
+Speed:645.0
 Cx:0.38
 ExplosiveMass:0.05
-ExplosiveType:tnt
+ExplosiveType:smoke_composition
 
 Name:90mm_oe_90_f1
 Type:he_frag_tank
-BulletMass:10.45
+BulletMass:5.27
 BallisticCaliber:0.09
-Speed:640.0
+Speed:650.0
 Cx:0.38
 ExplosiveMass:0.945
 ExplosiveType:tnt

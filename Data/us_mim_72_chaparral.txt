@@ -29,7 +29,7 @@ Cx:0.38
 ExplosiveMass:2.99
 ExplosiveType:octol_tnt
 
-Name:127mm_mim72g
+Name:aam/name/short
 Type:aam
 BulletMass:86.3
 BallisticCaliber:0.127

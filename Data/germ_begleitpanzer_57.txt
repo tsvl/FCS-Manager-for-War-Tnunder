@@ -85,7 +85,7 @@ ExplosiveMass:2.36
 ExplosiveType:octol
 ArmorPower:430.0
 
-Name:127mm_atgm_tow
+Name:127mm_i_tow
 Type:atgm_tank
 BulletMass:19.05
 BallisticCaliber:0.127

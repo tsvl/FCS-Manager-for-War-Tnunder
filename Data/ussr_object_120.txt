@@ -16,7 +16,7 @@ Name:152mm_m69_apds_fs
 Type:apds_fs_tank
 BulletMass:8.0
 BallisticCaliber:0.052
-Speed:1710.0
+Speed:1750.0
 Cx:0.395
 DamageCaliber:0.052
 APDS0:405.0

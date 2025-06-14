@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/120mm_IMI_MG251_user_cannon.blkx
 ZoomIn:6.14
-ZoomOut:12.29
+ZoomOut:14.772
 HasLaser
 
 Name:120mm_m325
@@ -19,7 +19,7 @@ BulletMass:17.0
 BallisticCaliber:0.12
 Speed:900.0
 Cx:0.431
-ExplosiveMass:3.0
+ExplosiveMass:2.3
 ExplosiveType:clx_663
 
 Name:120mm_m322_idf
@@ -29,14 +29,6 @@ BallisticCaliber:0.025
 Speed:1705.0
 Cx:0.73
 DamageCaliber:0.025
-APDS0:589.0
-APDS100:586.0
-APDS500:577.0
-APDS1000:565.0
-APDS1500:553.0
-APDS2000:541.0
-APDS3000:516.0
-APDS10000:5.0
 
 Name:120mm_m322_idf
 Type:apds_fs_long_l30_tank
@@ -45,11 +37,3 @@ BallisticCaliber:0.025
 Speed:1705.0
 Cx:0.73
 DamageCaliber:0.025
-APDS0:589.0
-APDS100:586.0
-APDS500:577.0
-APDS1000:565.0
-APDS1500:553.0
-APDS2000:541.0
-APDS3000:516.0
-APDS10000:5.0

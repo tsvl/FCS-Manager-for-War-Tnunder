@@ -49,6 +49,10 @@ Speed:655.0
 Cx:0.38
 ExplosiveMass:6.57
 ExplosiveType:a_ix_2
+demarrePenetrationK:0.15
+demarreSpeedPow:1.43
+demarreMassPow:0.71
+demarreCaliberPow:1.07
 
 Name:152mm_bp_540
 Type:heat_tank

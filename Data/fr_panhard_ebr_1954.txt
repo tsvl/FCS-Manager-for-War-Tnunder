@@ -24,6 +24,17 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
+Name:75mm_pcot51p
+Type:apcbc_solid_medium_caliber_tank
+BulletMass:6.4
+BallisticCaliber:0.075
+Speed:1000.0
+Cx:0.4
+demarrePenetrationK:1.0
+demarreSpeedPow:1.43
+demarreMassPow:0.71
+demarreCaliberPow:1.07
+
 Name:75mm_sa50_he
 Type:he_frag_tank
 BulletMass:6.2

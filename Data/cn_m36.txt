@@ -46,4 +46,4 @@ BallisticCaliber:0.09
 Speed:821.0
 Cx:0.38
 ExplosiveMass:0.05
-ExplosiveType:tnt
+ExplosiveType:smoke_composition

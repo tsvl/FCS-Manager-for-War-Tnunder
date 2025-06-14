@@ -8,7 +8,7 @@ Type:apcbc_tank
 BulletMass:2.8
 BallisticCaliber:0.057
 Speed:1000.0
-Cx:0.38
+Cx:0.377
 ExplosiveMass:0.013
 ExplosiveType:a_ix_2
 demarrePenetrationK:1.0
@@ -21,7 +21,7 @@ Type:apcbc_tank
 BulletMass:2.8
 BallisticCaliber:0.057
 Speed:1000.0
-Cx:0.38
+Cx:0.377
 ExplosiveMass:0.013
 ExplosiveType:a_ix_2
 demarrePenetrationK:1.0
@@ -34,7 +34,7 @@ Type:he_frag_tank
 BulletMass:2.8
 BallisticCaliber:0.057
 Speed:1000.0
-Cx:0.38
+Cx:0.377
 ExplosiveMass:0.153
 ExplosiveType:a_ix_2
 demarrePenetrationK:0.15
@@ -49,14 +49,6 @@ BallisticCaliber:0.016
 Speed:1500.0
 Cx:0.8
 DamageCaliber:0.016
-APDS0:224.7
-APDS100:220.6
-APDS500:209.0
-APDS1000:193.4
-APDS1500:177.1
-APDS2000:161.4
-APDS3000:129.2
-APDS10000:5.0
 
 Name:57mm_3uo8
 Type:he_frag_radio_fuse

@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/76mm_17pdr_QF_user_cannon.blkx
 ZoomIn:12.3
-ZoomOut:13.3
+ZoomOut:24.8
 
 Name:76mm_shot_mk6_ap
 Type:ap_tank

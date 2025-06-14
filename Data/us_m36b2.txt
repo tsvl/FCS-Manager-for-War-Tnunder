@@ -7,7 +7,7 @@ Type:apbc_usa_tank
 BulletMass:10.91
 BallisticCaliber:0.09
 Speed:853.0
-Cx:0.38
+Cx:0.31857
 demarrePenetrationK:0.9
 demarreSpeedPow:1.43
 demarreMassPow:0.71
@@ -31,7 +31,7 @@ Type:apcbc_tank
 BulletMass:10.91
 BallisticCaliber:0.09
 Speed:853.44
-Cx:0.276611
+Cx:0.38
 ExplosiveMass:0.14
 ExplosiveType:exp_d
 demarrePenetrationK:1.0
@@ -59,7 +59,7 @@ BallisticCaliber:0.09
 Speed:821.0
 Cx:0.38
 ExplosiveMass:0.05
-ExplosiveType:tnt
+ExplosiveType:smoke_composition
 
 Name:90mm_m348
 Type:heat_fs_tank

@@ -43,11 +43,11 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:atam_mistral
+Name:atam_mistral_sam
 Type:aam
 BulletMass:18.7
 BallisticCaliber:0.09
-Speed:0.0
+Speed:850.0
 Cx:0.38
 ExplosiveMass:1.11
 ExplosiveType:hbx

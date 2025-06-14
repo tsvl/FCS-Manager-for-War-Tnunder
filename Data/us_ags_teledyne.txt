@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/105mm_M68A1_AGS_user_cannon.blkx
 ZoomIn:9.21
-ZoomOut:10.21
+ZoomOut:28.63
 HasLaser
 
 Name:105mm_m456a2
@@ -33,24 +33,6 @@ ExplosiveMass:0.05
 ExplosiveType:smoke_composition
 DamageMass:0.57
 
-Name:105mm_m735
-Type:apds_fs_tungsten_l10_l15_tank
-BulletMass:3.719457
-BallisticCaliber:0.035
-Speed:1501.14
-Cx:0.2925
-DamageCaliber:0.03175
-APDS0:292.4
-APDS100:290.6
-APDS500:284.0
-APDS1000:275.0
-APDS1500:265.9
-APDS2000:256.5
-APDS2500:246.7
-APDS3000:236.7
-APDS4000:215.5
-APDS10000:50.0
-
 Name:105mm_m774
 Type:apds_fs_long_tank
 BulletMass:3.4
@@ -58,11 +40,11 @@ BallisticCaliber:0.026
 Speed:1509.0
 Cx:0.45
 DamageCaliber:0.026
-APDS0:372.0
-APDS100:370.0
-APDS500:365.0
-APDS1000:358.0
-APDS1500:351.0
-APDS2000:343.0
-APDS3000:328.0
-APDS10000:5.0
+
+Name:105mm_m833
+Type:apds_fs_long_tank
+BulletMass:3.7
+BallisticCaliber:0.024
+Speed:1485.0
+Cx:0.45
+DamageCaliber:0.024

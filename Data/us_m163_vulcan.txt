@@ -2,7 +2,7 @@ WeaponPath:gameData/Weapons/groundModels_weapons/20mm_M168_user_cannon.blkx
 ZoomIn:12.2
 ZoomOut:12.3
 
-Name:ap_i_t/name/short
+Name:20mm_m52a1
 Type:ap_i_t
 BulletMass:0.09962
 BallisticCaliber:0.02
@@ -15,7 +15,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:he_i_t/name/short
+Name:20mm_m242a1
 Type:he_i_t
 BulletMass:0.102
 BallisticCaliber:0.02
@@ -28,7 +28,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:ap_i/name/short
+Name:20mm_m53
 Type:ap_i
 BulletMass:0.09962
 BallisticCaliber:0.02

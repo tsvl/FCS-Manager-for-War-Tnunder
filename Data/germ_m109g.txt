@@ -1,4 +1,4 @@
-WeaponPath:gameData/Weapons/groundModels_weapons/155mm_m126_user_cannon.blkx
+WeaponPath:gameData/Weapons/groundModels_weapons/155mm_m126e1_user_cannon.blkx
 ZoomIn:18.5
 ZoomOut:19.5
 
@@ -6,7 +6,7 @@ Name:155mm_m107
 Type:he_frag_tank
 BulletMass:43.1
 BallisticCaliber:0.155
-Speed:562.0
+Speed:684.0
 Cx:0.38
 ExplosiveMass:6.98
 ExplosiveType:comp_b
@@ -19,7 +19,7 @@ Name:155mm_m107
 Type:he_frag_tank
 BulletMass:43.1
 BallisticCaliber:0.155
-Speed:562.0
+Speed:684.0
 Cx:0.38
 ExplosiveMass:6.98
 ExplosiveType:comp_b
@@ -32,7 +32,7 @@ Name:155mm_m110
 Type:smoke_tank
 BulletMass:44.63
 BallisticCaliber:0.155
-Speed:562.0
+Speed:684.0
 Cx:0.38
 ExplosiveMass:0.05
 ExplosiveType:smoke_composition
@@ -42,7 +42,11 @@ Name:155mm_m107_pf
 Type:he_frag_radio_fuse
 BulletMass:43.1
 BallisticCaliber:0.155
-Speed:562.0
+Speed:684.0
 Cx:0.38
 ExplosiveMass:6.98
 ExplosiveType:comp_b
+demarrePenetrationK:0.15
+demarreSpeedPow:1.43
+demarreMassPow:0.71
+demarreCaliberPow:1.07

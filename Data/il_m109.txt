@@ -46,3 +46,7 @@ Speed:562.0
 Cx:0.38
 ExplosiveMass:6.98
 ExplosiveType:comp_b
+demarrePenetrationK:0.15
+demarreSpeedPow:1.43
+demarreMassPow:0.71
+demarreCaliberPow:1.07

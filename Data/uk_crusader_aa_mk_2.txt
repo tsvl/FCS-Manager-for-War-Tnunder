@@ -10,7 +10,7 @@ Speed:830.0
 Cx:0.49857
 ExplosiveMass:0.006
 ExplosiveType:tnt
-demarrePenetrationK:1.0
+demarrePenetrationK:0.9
 demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
@@ -34,7 +34,7 @@ BulletMass:0.14
 BallisticCaliber:0.02
 Speed:830.0
 Cx:0.49857
-demarrePenetrationK:1.0
+demarrePenetrationK:0.9
 demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07

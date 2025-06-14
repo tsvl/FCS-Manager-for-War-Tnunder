@@ -2,7 +2,7 @@ WeaponPath:gameData/Weapons/groundModels_weapons/127mm_Rbs_55_tow_UDES_launcher_
 ZoomIn:9.217
 ZoomOut:18.494
 
-Name:127mm_atgm_tow
+Name:127mm_rb_55_b
 Type:atgm_tank
 BulletMass:19.05
 BallisticCaliber:0.127
@@ -12,7 +12,7 @@ ExplosiveMass:2.04
 ExplosiveType:lx14
 ArmorPower:630.0
 
-Name:127mm_atgm_tow
+Name:127mm_rb_55_b
 Type:atgm_tank
 BulletMass:19.05
 BallisticCaliber:0.127
@@ -22,7 +22,7 @@ ExplosiveMass:2.04
 ExplosiveType:lx14
 ArmorPower:630.0
 
-Name:127mm_atgm_tow
+Name:152mm_rb_55_c
 Type:atgm_tank
 BulletMass:21.45
 BallisticCaliber:0.152

@@ -29,5 +29,5 @@ BallisticCaliber:0.15
 Speed:250.0
 Cx:0.38
 ExplosiveMass:4.06
-ExplosiveType:hta
+ExplosiveType:octol
 ArmorPower:900.0

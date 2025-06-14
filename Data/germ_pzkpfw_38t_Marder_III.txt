@@ -6,7 +6,7 @@ Name:76mm_pzgr_39_rot
 Type:apcbc_tank
 BulletMass:7.6
 BallisticCaliber:0.0762
-Speed:710.0
+Speed:720.0
 Cx:0.4
 ExplosiveMass:0.02
 ExplosiveType:h10

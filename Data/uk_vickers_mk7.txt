@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/120mm_L11A5_Mk3_Vickers_user_cannon.blkx
-ZoomIn:6.14
-ZoomOut:18.5
+ZoomIn:7.37
+ZoomOut:10.53
 HasLaser
 
 Name:120mm_l23a1
@@ -10,14 +10,6 @@ BallisticCaliber:0.029
 Speed:1535.0
 Cx:0.34982
 DamageCaliber:0.029
-APDS0:396.0
-APDS100:394.0
-APDS500:387.0
-APDS1000:376.0
-APDS1500:367.0
-APDS2000:357.0
-APDS3000:345.0
-APDS10000:10.0
 
 Name:120mm_l37a7
 Type:hesh_tank
@@ -46,11 +38,3 @@ BallisticCaliber:0.0267
 Speed:1550.0
 Cx:0.45126
 DamageCaliber:0.0267
-APDS0:471.0
-APDS100:469.0
-APDS500:464.0
-APDS1000:458.0
-APDS1500:450.0
-APDS2000:444.0
-APDS3000:429.0
-APDS10000:5.0

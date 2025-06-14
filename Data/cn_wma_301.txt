@@ -30,14 +30,6 @@ BallisticCaliber:0.033
 Speed:1455.0
 Cx:0.26763
 DamageCaliber:0.033
-APDS0:337.0
-APDS100:335.0
-APDS500:330.0
-APDS1000:322.0
-APDS1500:314.0
-APDS2000:306.0
-APDS3000:290.0
-APDS10000:10.0
 
 Name:105mm_dtb_1_he
 Type:he_frag_radio_fuse
@@ -48,6 +40,19 @@ Cx:0.38
 ExplosiveMass:1.661
 ExplosiveType:tnt
 demarrePenetrationK:0.15
+demarreSpeedPow:1.43
+demarreMassPow:0.71
+demarreCaliberPow:1.07
+
+Name:105mm_btm_1
+Type:sapcbc_tank
+BulletMass:16.2
+BallisticCaliber:0.105
+Speed:803.0
+Cx:0.38
+ExplosiveMass:1.5
+ExplosiveType:a_ix_2
+demarrePenetrationK:0.65
 demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07

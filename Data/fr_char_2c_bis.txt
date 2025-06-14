@@ -2,27 +2,27 @@ WeaponPath:gameData/Weapons/groundModels_weapons/155mm_Schneider_155_C_user_cann
 ZoomIn:18.49
 ZoomOut:19.49
 
-Name:155mm_mle15
+Name:155mm_oa_mle14
 Type:he_frag_tank
 BulletMass:43.2
 BallisticCaliber:0.155
-Speed:240.0
+Speed:210.0
 Cx:0.38
-ExplosiveMass:7.65
-ExplosiveType:tnt
+ExplosiveMass:10.2
+ExplosiveType:melinite
 demarrePenetrationK:0.15
 demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:155mm_mle15
+Name:155mm_oa_mle14
 Type:he_frag_tank
 BulletMass:43.2
 BallisticCaliber:0.155
-Speed:240.0
+Speed:210.0
 Cx:0.38
-ExplosiveMass:7.65
-ExplosiveType:tnt
+ExplosiveMass:10.2
+ExplosiveType:melinite
 demarrePenetrationK:0.15
 demarreSpeedPow:1.43
 demarreMassPow:0.71

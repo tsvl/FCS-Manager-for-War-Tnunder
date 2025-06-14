@@ -1,4 +1,4 @@
-WeaponPath:gameData/Weapons/groundModels_weapons/125mm_2A46_M5_T_90A_user_cannon.blkx
+WeaponPath:gameData/Weapons/groundModels_weapons/125mm_2A46_M5_t_90s_bheeshma_user_cannon.blkx
 ZoomIn:6.14
 ZoomOut:27.54
 HasLaser
@@ -46,7 +46,7 @@ Name:125mm_9m_119m1
 Type:atgm_tandem_tank
 BulletMass:17.2
 BallisticCaliber:0.125
-Speed:445.0
+Speed:470.0
 Cx:0.38
 ExplosiveMass:3.6
 ExplosiveType:ocfol

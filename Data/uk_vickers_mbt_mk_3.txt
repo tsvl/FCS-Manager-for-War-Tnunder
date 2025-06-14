@@ -3,7 +3,7 @@ ZoomIn:7.37
 ZoomOut:7.37
 HasLaser
 
-Name:105mm_m728
+Name:105mm_l52a1
 Type:apds_l15_tank
 BulletMass:4.53
 BallisticCaliber:0.061

@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/183mm_QF_L4_user_cannon.blkx
-ZoomIn:12.3
-ZoomOut:15.0
+ZoomIn:14.7
+ZoomOut:29.7
 
 Name:183mm_hesh
 Type:hesh_tank

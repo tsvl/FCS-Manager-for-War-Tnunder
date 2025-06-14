@@ -46,3 +46,7 @@ Speed:897.0
 Cx:0.38
 ExplosiveMass:8.7
 ExplosiveType:rdx_tnt
+demarrePenetrationK:0.15
+demarreSpeedPow:1.43
+demarreMassPow:0.71
+demarreCaliberPow:1.07

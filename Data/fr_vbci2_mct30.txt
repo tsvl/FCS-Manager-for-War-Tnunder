@@ -18,19 +18,11 @@ demarreCaliberPow:1.07
 
 Name:30mm_mk258
 Type:apds_fs_long_tank
-BulletMass:0.098
+BulletMass:0.17
 BallisticCaliber:0.009
 Speed:1430.0
 Cx:0.3
 DamageCaliber:0.009
-APDS0:116.0
-APDS100:115.0
-APDS500:110.0
-APDS1000:104.0
-APDS1500:99.0
-APDS2000:93.0
-APDS3000:82.0
-APDS10000:5.0
 
 Name:30mm_mk_266
 Type:he_i_t

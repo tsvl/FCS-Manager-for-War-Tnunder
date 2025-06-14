@@ -4,11 +4,11 @@ ZoomOut:19.49
 
 Name:75mm_mle1916
 Type:aphe_tank
-BulletMass:7.2
+BulletMass:7.44
 BallisticCaliber:0.075
-Speed:500.0
+Speed:558.0
 Cx:0.5
-ExplosiveMass:0.285
+ExplosiveMass:0.35
 ExplosiveType:tnt
 demarrePenetrationK:0.9
 demarreSpeedPow:1.43
@@ -17,11 +17,11 @@ demarreCaliberPow:1.07
 
 Name:75mm_mle1916
 Type:aphe_tank
-BulletMass:7.2
+BulletMass:7.44
 BallisticCaliber:0.075
-Speed:500.0
+Speed:558.0
 Cx:0.5
-ExplosiveMass:0.285
+ExplosiveMass:0.35
 ExplosiveType:tnt
 demarrePenetrationK:0.9
 demarreSpeedPow:1.43

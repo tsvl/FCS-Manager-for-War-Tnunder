@@ -29,7 +29,7 @@ Name:90mm_m431
 Type:heat_fs_tank
 BulletMass:5.8
 BallisticCaliber:0.09
-Speed:1216.0
+Speed:1181.0
 Cx:0.38
 ExplosiveMass:0.544
 ExplosiveType:comp_b

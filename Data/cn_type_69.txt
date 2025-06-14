@@ -10,14 +10,6 @@ BallisticCaliber:0.04
 Speed:1505.0
 Cx:0.452
 DamageCaliber:0.04
-APDS0:219.3
-APDS100:212.8
-APDS500:193.8
-APDS1000:170.4
-APDS1500:146.6
-APDS2000:125.6
-APDS3000:84.0
-APDS10000:10.0
 
 Name:100mm_1_71_74
 Type:he_frag_tank
@@ -36,7 +28,7 @@ Name:100mm_type1973
 Type:heat_fs_tank
 BulletMass:10.05
 BallisticCaliber:0.1
-Speed:1000.0
+Speed:955.0
 Cx:0.93
 ExplosiveMass:0.922
 ExplosiveType:rdx_tnt

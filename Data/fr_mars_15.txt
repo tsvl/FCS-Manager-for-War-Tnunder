@@ -11,7 +11,7 @@ Speed:950.0
 Cx:0.38
 ExplosiveMass:0.67
 ExplosiveType:comp_b
-ArmorPower:320.0
+ArmorPower:350.0
 
 Name:90mm_ofum_90_f1
 Type:smoke_tank
@@ -20,7 +20,7 @@ BallisticCaliber:0.09
 Speed:750.0
 Cx:0.38
 ExplosiveMass:0.05
-ExplosiveType:tnt
+ExplosiveType:smoke_composition
 
 Name:90mm_oe_90_f1
 Type:he_frag_tank
@@ -37,16 +37,8 @@ demarreCaliberPow:1.07
 
 Name:90mm_ofl_f1
 Type:apds_fs_long_tank
-BulletMass:2.33
+BulletMass:3.8
 BallisticCaliber:0.026
 Speed:1275.0
-Cx:0.52
+Cx:0.49
 DamageCaliber:0.026
-APDS0:271.0
-APDS100:267.0
-APDS500:253.0
-APDS1000:235.0
-APDS1500:218.0
-APDS2000:201.0
-APDS3000:180.0
-APDS10000:5.0

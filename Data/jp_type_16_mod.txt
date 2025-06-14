@@ -50,3 +50,11 @@ Cx:0.68423
 ExplosiveMass:0.05
 ExplosiveType:smoke_composition
 DamageMass:0.57
+
+Name:105mm_dm23
+Type:apds_fs_tungsten_l10_l15_tank
+BulletMass:4.2
+BallisticCaliber:0.033
+Speed:1455.0
+Cx:0.26763
+DamageCaliber:0.033

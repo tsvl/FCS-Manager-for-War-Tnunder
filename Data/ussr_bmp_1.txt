@@ -10,7 +10,7 @@ BulletMass:2.6
 BallisticCaliber:0.073
 Speed:665.0
 Cx:0.38
-ExplosiveMass:0.735
+ExplosiveMass:0.322
 ExplosiveType:a_ix_1
 ArmorPower:300.0
 
@@ -20,7 +20,7 @@ BulletMass:2.6
 BallisticCaliber:0.073
 Speed:665.0
 Cx:0.38
-ExplosiveMass:0.735
+ExplosiveMass:0.322
 ExplosiveType:a_ix_1
 ArmorPower:300.0
 

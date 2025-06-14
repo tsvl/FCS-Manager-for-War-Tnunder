@@ -1,0 +1,17 @@
+WeaponPath:gameData/Weapons/groundModels_weapons/152mm_football_user_cannon.blkx
+ZoomIn:6.14
+ZoomOut:9.21
+
+Name:football_kick
+Type:football_kick
+BulletMass:50.0
+BallisticCaliber:0.152
+Speed:1500.0
+Cx:0.01
+
+Name:football_kick
+Type:football_kick
+BulletMass:50.0
+BallisticCaliber:0.152
+Speed:1500.0
+Cx:0.01

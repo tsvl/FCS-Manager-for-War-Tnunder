@@ -21,7 +21,7 @@ BulletMass:9.0
 BallisticCaliber:0.088
 Speed:820.0
 Cx:0.38
-ExplosiveMass:0.698
+ExplosiveMass:0.9
 ExplosiveType:fp02
 demarrePenetrationK:0.15
 demarreSpeedPow:1.43

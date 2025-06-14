@@ -9,9 +9,9 @@ Type:frag_i_t
 BulletMass:0.25
 BallisticCaliber:0.025
 Speed:1050.0
-Cx:0.38
+Cx:0.25
 ExplosiveMass:0.019
-ExplosiveType:tnt
+ExplosiveType:a_ix_2
 demarrePenetrationK:0.15
 demarreSpeedPow:1.43
 demarreMassPow:0.71
@@ -22,9 +22,9 @@ Type:frag_i_t
 BulletMass:0.25
 BallisticCaliber:0.025
 Speed:1050.0
-Cx:0.38
+Cx:0.25
 ExplosiveMass:0.019
-ExplosiveType:tnt
+ExplosiveType:a_ix_2
 demarrePenetrationK:0.15
 demarreSpeedPow:1.43
 demarreMassPow:0.71
@@ -35,7 +35,7 @@ Type:ap_t
 BulletMass:0.25
 BallisticCaliber:0.025
 Speed:1050.0
-Cx:0.38
+Cx:0.25
 demarrePenetrationK:0.9
 demarreSpeedPow:1.43
 demarreMassPow:0.71
@@ -47,14 +47,14 @@ BulletMass:10.77
 BallisticCaliber:0.071
 Speed:600.0
 Cx:0.38
-ExplosiveMass:0.5
+ExplosiveMass:0.6
 ExplosiveType:a_ix_2
 
-Name:72mm_hn_6
+Name:aam/name/short
 Type:aam
 BulletMass:10.77
 BallisticCaliber:0.071
 Speed:600.0
 Cx:0.38
-ExplosiveMass:0.5
+ExplosiveMass:0.6
 ExplosiveType:a_ix_2

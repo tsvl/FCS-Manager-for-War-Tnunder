@@ -2,7 +2,7 @@ WeaponPath:gameData/Weapons/groundModels_weapons/14_5mm_KPVT_BTR_152_user_machin
 ZoomIn:21.0
 ZoomOut:40.0
 
-Name:he_i_ball/name/short
+Name:14mm_mdz
 Type:he_i_ball
 BulletMass:0.059
 BallisticCaliber:0.0145
@@ -17,7 +17,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:ap_i_ball/name/short
+Name:14mm_api
 Type:ap_i_ball
 BulletMass:0.064
 BallisticCaliber:0.0145
@@ -28,7 +28,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:ap_i_t_ball/name/short
+Name:14mm_apit
 Type:ap_i_t_ball
 BulletMass:0.0596
 BallisticCaliber:0.0145
@@ -39,7 +39,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:he_i_ball/name/short
+Name:14mm_mdz
 Type:he_i_ball
 BulletMass:0.059
 BallisticCaliber:0.0145

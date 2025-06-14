@@ -2,7 +2,7 @@ WeaponPath:gameData/Weapons/groundModels_weapons/37mm_FlaK44_user_cannon.blkx
 ZoomIn:21.0
 ZoomOut:40.0
 
-Name:37mm_sprgr_18
+Name:37mm_sprgr_18_belt
 Type:frag_i_t
 BulletMass:0.62
 BallisticCaliber:0.037
@@ -15,7 +15,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:37mm_sprgr_18
+Name:37mm_sprgr_18_belt
 Type:frag_i_t
 BulletMass:0.62
 BallisticCaliber:0.037
@@ -28,7 +28,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:37mm_pzgr
+Name:37mm_pzgr_belt
 Type:aphe
 BulletMass:0.685
 BallisticCaliber:0.037

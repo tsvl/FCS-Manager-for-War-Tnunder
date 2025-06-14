@@ -81,7 +81,7 @@ ExplosiveMass:0.05
 ExplosiveType:smoke_composition
 DamageMass:0.78
 
-Name:100mm_9m_117
+Name:atgm_tank/name/short
 Type:atgm_tank
 BulletMass:18.8
 BallisticCaliber:0.1

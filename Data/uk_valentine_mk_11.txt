@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/75mm_QQF_MkV_user_cannon.blkx
-ZoomIn:21.0
-ZoomOut:40.0
+ZoomIn:12.3
+ZoomOut:24.7
 
 Name:75mm_m72
 Type:ap_tank
@@ -36,7 +36,7 @@ ExplosiveMass:0.05
 ExplosiveType:smoke_composition
 DamageMass:0.15
 
-Name:75mm_m61
+Name:75mm_m61_solid
 Type:apcbc_solid_medium_caliber_tank
 BulletMass:6.53
 BallisticCaliber:0.075

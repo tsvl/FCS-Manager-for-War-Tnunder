@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/142mm_ACRA_user_cannon.blkx
-ZoomIn:12.3
-ZoomOut:13.3
+ZoomIn:7.37
+ZoomOut:7.47
 
 Name:142mm_acra
 Type:atgm_tank

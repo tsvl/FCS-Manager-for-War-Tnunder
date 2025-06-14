@@ -1,5 +1,5 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/105mm_M68_XM_user_cannon.blkx
-ZoomIn:6.14
+ZoomIn:7.22
 ZoomOut:18.5
 HasLaser
 

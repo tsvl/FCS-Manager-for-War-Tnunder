@@ -2,7 +2,7 @@ WeaponPath:gameData/Weapons/groundModels_weapons/20mm_TNSh_user_cannon.blkx
 ZoomIn:21.0
 ZoomOut:40.0
 
-Name:frag_i/name/short
+Name:20mm_shvak_frag
 Type:frag_i
 BulletMass:0.091
 BallisticCaliber:0.02
@@ -15,7 +15,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:ap_i/name/short
+Name:20mm_shvak_apit
 Type:ap_i
 BulletMass:0.096
 BallisticCaliber:0.02
@@ -26,7 +26,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:ap_i/name/short
+Name:20mm_shvak_api
 Type:ap_i
 BulletMass:0.096
 BallisticCaliber:0.02

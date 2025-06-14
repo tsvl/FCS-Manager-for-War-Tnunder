@@ -2,7 +2,7 @@ WeaponPath:gameData/Weapons/groundModels_weapons/20mm_FlaK38_user_cannon.blkx
 ZoomIn:21.0
 ZoomOut:40.0
 
-Name:he_frag_i_t/name/short
+Name:20mm_sprgr
 Type:he_frag_i_t
 BulletMass:0.115
 BallisticCaliber:0.02
@@ -15,7 +15,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:he_frag_i_t/name/short
+Name:20mm_sprgr
 Type:he_frag_i_t
 BulletMass:0.115
 BallisticCaliber:0.02
@@ -28,7 +28,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:ap_i_t/name/short
+Name:20mm_pzgr
 Type:ap_i_t
 BulletMass:0.148
 BallisticCaliber:0.02
@@ -39,7 +39,7 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:apcr_t/name/short
+Name:20mm_pzgr_40
 Type:apcr_t
 BulletMass:0.1
 BallisticCaliber:0.02

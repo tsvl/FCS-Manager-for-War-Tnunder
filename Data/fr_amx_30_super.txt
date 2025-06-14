@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/105mm_CN_105_F1_user_cannon.blkx
 ZoomIn:6.14
-ZoomOut:9.21
+ZoomOut:18.61
 HasLaser
 
 Name:105mm_occ_f1
@@ -43,14 +43,6 @@ BallisticCaliber:0.026
 Speed:1525.0
 Cx:0.49
 DamageCaliber:0.026
-APDS0:361.0
-APDS100:358.0
-APDS500:350.0
-APDS1000:341.0
-APDS1500:332.0
-APDS2000:322.0
-APDS3000:302.0
-APDS10000:10.0
 
 Name:105mm_ofph_f1
 Type:smoke_tank

@@ -41,21 +41,13 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
-Name:30mm_3ubr_11
+Name:30mm_dtc10_30
 Type:apds_fs_long_tank
 BulletMass:0.1298
-BallisticCaliber:0.01
-Speed:1190.0
-Cx:0.15
-DamageCaliber:0.01
-APDS0:101.9
-APDS100:99.0
-APDS500:94.0
-APDS1000:88.0
-APDS1500:81.0
-APDS2000:75.0
-APDS3000:62.0
-APDS10000:5.0
+BallisticCaliber:0.0105
+Speed:1310.0
+Cx:0.25
+DamageCaliber:0.0105
 
 Name:30mm_UBR6
 Type:ap_t
@@ -91,4 +83,4 @@ Speed:205.0
 Cx:0.38
 ExplosiveMass:0.9
 ExplosiveType:a_ix_2
-ArmorPower:1000.0
+ArmorPower:900.0

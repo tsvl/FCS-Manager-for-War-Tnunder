@@ -8,16 +8,8 @@ Type:apds_fs_long_tank
 BulletMass:4.3
 BallisticCaliber:0.032
 Speed:1640.0
-Cx:0.33
+Cx:0.30562
 DamageCaliber:0.032
-APDS0:410.0
-APDS100:408.0
-APDS500:401.0
-APDS1000:393.0
-APDS1500:384.0
-APDS2000:376.0
-APDS3000:360.0
-APDS10000:5.0
 
 Name:120mm_slsgr_m95
 Type:he_frag_fs_tank
@@ -39,14 +31,6 @@ BallisticCaliber:0.025
 Speed:1640.0
 Cx:0.55
 DamageCaliber:0.025
-APDS0:481.0
-APDS100:478.0
-APDS500:470.0
-APDS1000:461.0
-APDS1500:450.0
-APDS2000:440.0
-APDS3000:430.0
-APDS10000:5.0
 
 Name:120mm_slpprj_m95
 Type:apds_fs_long_l30_tank
@@ -55,11 +39,3 @@ BallisticCaliber:0.025
 Speed:1705.0
 Cx:0.73
 DamageCaliber:0.025
-APDS0:589.0
-APDS100:586.0
-APDS500:577.0
-APDS1000:565.0
-APDS1500:553.0
-APDS2000:541.0
-APDS3000:516.0
-APDS10000:5.0

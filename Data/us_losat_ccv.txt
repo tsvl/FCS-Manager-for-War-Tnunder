@@ -11,10 +11,6 @@ Speed:1520.0
 Cx:0.38
 DamageMass:11.83
 DamageCaliber:0.03
-demarrePenetrationK:0.22
-demarreSpeedPow:1.43
-demarreMassPow:0.71
-demarreCaliberPow:1.07
 
 Name:162mm_losat
 Type:atgm_ke_tank
@@ -24,7 +20,3 @@ Speed:1520.0
 Cx:0.38
 DamageMass:11.83
 DamageCaliber:0.03
-demarrePenetrationK:0.22
-demarreSpeedPow:1.43
-demarreMassPow:0.71
-demarreCaliberPow:1.07

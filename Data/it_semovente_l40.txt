@@ -10,7 +10,7 @@ Speed:630.0
 Cx:0.6
 ExplosiveMass:0.03
 ExplosiveType:tnt
-demarrePenetrationK:1.0
+demarrePenetrationK:0.9
 demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
@@ -36,7 +36,7 @@ Speed:630.0
 Cx:0.3
 ExplosiveMass:0.03
 ExplosiveType:tnt
-demarrePenetrationK:1.0
+demarrePenetrationK:0.9
 demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07

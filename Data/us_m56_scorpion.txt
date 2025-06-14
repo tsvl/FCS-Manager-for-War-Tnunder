@@ -45,7 +45,7 @@ BallisticCaliber:0.09
 Speed:821.0
 Cx:0.38
 ExplosiveMass:0.05
-ExplosiveType:tnt
+ExplosiveType:smoke_composition
 
 Name:90mm_t142e3
 Type:hesh_tank
@@ -56,16 +56,3 @@ Cx:0.70234
 ExplosiveMass:2.12
 ExplosiveType:comp_a
 ArmorPower:102.0
-
-Name:90mm_m82
-Type:apcbc_tank
-BulletMass:10.91
-BallisticCaliber:0.09
-Speed:853.44
-Cx:0.276611
-ExplosiveMass:0.14
-ExplosiveType:exp_d
-demarrePenetrationK:1.0
-demarreSpeedPow:1.43
-demarreMassPow:0.71
-demarreCaliberPow:1.07
