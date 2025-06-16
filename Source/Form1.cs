@@ -746,8 +746,51 @@ namespace FCS
                                     }
                                     if (data.Contains("\"Cx\""))
                                     {
-                                        Cx = data.Split('\"')[2];
-                                        Cx = Cx.Split(' ')[1];
+                                        string cxData = data.Split('\"')[2];
+                                        if (cxData.Contains("["))
+                                        {
+                                            // Handle array case - collect all values and average them
+                                            List<double> cxValues = new List<double>();
+                                            string arrayLine = cxData;
+                                            // Keep reading lines until we find the closing bracket
+                                            while (!arrayLine.Contains("]") && i + 1 < lines.Length)
+                                            {
+                                                // Extract numbers from current line
+                                                string[] parts = arrayLine.Split(new char[] { ',', '[', ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                                                foreach (string part in parts)
+                                                {
+                                                    if (double.TryParse(part, out double value))
+                                                    {
+                                                        cxValues.Add(value);
+                                                    }
+                                                }
+                                                i++;
+                                                arrayLine = lines[i];
+                                            }
+                                            // Process the final line with closing bracket
+                                            string[] finalParts = arrayLine.Split(new char[] { ',', ']', ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                                            foreach (string part in finalParts)
+                                            {
+                                                if (double.TryParse(part, out double value))
+                                                {
+                                                    cxValues.Add(value);
+                                                }
+                                            }        // Calculate average
+                                            if (cxValues.Count > 0)
+                                            {
+                                                double average = cxValues.Average();
+                                                Cx = Math.Round(average, 4).ToString();
+                                            }
+                                            else
+                                            {
+                                                Cx = "0.38"; // Default fallback
+                                            }
+                                        }
+                                        else
+                                        {
+                                            // Handle single value case as before
+                                            Cx = cxData.Split(' ')[1];
+                                        }
                                     }
                                     if (data.Contains("\"bulletType\""))
                                     {
@@ -1077,8 +1120,51 @@ namespace FCS
                                     }
                                     if (data.Contains("\"Cx\""))
                                     {
-                                        Cx = data.Split('\"')[2];
-                                        Cx = Cx.Split(' ')[1];
+                                        string cxData = data.Split('\"')[2];
+                                        if (cxData.Contains("["))
+                                        {
+                                            // Handle array case - collect all values and average them
+                                            List<double> cxValues = new List<double>();
+                                            string arrayLine = cxData;
+                                            // Keep reading lines until we find the closing bracket
+                                            while (!arrayLine.Contains("]") && i + 1 < lines.Length)
+                                            {
+                                                // Extract numbers from current line
+                                                string[] parts = arrayLine.Split(new char[] { ',', '[', ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                                                foreach (string part in parts)
+                                                {
+                                                    if (double.TryParse(part, out double value))
+                                                    {
+                                                        cxValues.Add(value);
+                                                    }
+                                                }
+                                                i++;
+                                                arrayLine = lines[i];
+                                            }
+                                            // Process the final line with closing bracket
+                                            string[] finalParts = arrayLine.Split(new char[] { ',', ']', ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                                            foreach (string part in finalParts)
+                                            {
+                                                if (double.TryParse(part, out double value))
+                                                {
+                                                    cxValues.Add(value);
+                                                }
+                                            }        // Calculate average
+                                            if (cxValues.Count > 0)
+                                            {
+                                                double average = cxValues.Average();
+                                                Cx = Math.Round(average, 4).ToString();
+                                            }
+                                            else
+                                            {
+                                                Cx = "0.38"; // Default fallback
+                                            }
+                                        }
+                                        else
+                                        {
+                                            // Handle single value case as before
+                                            Cx = cxData.Split(' ')[1];
+                                        }
                                     }
                                     if (data.Contains("\"bulletType\""))
                                     {
@@ -1237,8 +1323,51 @@ namespace FCS
                                 }
                                 if (data.Contains("\"Cx\""))
                                 {
-                                    Cx = data.Split('\"')[2];
-                                    Cx = Cx.Split(' ')[1];
+                                    string cxData = data.Split('\"')[2];
+                                    if (cxData.Contains("["))
+                                    {
+                                        // Handle array case - collect all values and average them
+                                        List<double> cxValues = new List<double>();
+                                        string arrayLine = cxData;
+                                        // Keep reading lines until we find the closing bracket
+                                        while (!arrayLine.Contains("]") && i + 1 < lines.Length)
+                                        {
+                                            // Extract numbers from current line
+                                            string[] parts = arrayLine.Split(new char[] { ',', '[', ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                                            foreach (string part in parts)
+                                            {
+                                                if (double.TryParse(part, out double value))
+                                                {
+                                                    cxValues.Add(value);
+                                                }
+                                            }
+                                            i++;
+                                            arrayLine = lines[i];
+                                        }
+                                        // Process the final line with closing bracket
+                                        string[] finalParts = arrayLine.Split(new char[] { ',', ']', ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                                        foreach (string part in finalParts)
+                                        {
+                                            if (double.TryParse(part, out double value))
+                                            {
+                                                cxValues.Add(value);
+                                            }
+                                        }        // Calculate average
+                                        if (cxValues.Count > 0)
+                                        {
+                                            double average = cxValues.Average();
+                                            Cx = Math.Round(average, 4).ToString();
+                                        }
+                                        else
+                                        {
+                                            Cx = "0.38"; // Default fallback
+                                        }
+                                    }
+                                    else
+                                    {
+                                        // Handle single value case as before
+                                        Cx = cxData.Split(' ')[1];
+                                    }
                                 }
                                 if (data.Contains("\"bulletType\""))
                                 {
