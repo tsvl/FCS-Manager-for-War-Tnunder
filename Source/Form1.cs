@@ -62,7 +62,7 @@ namespace FCS
         }
         private bool CanUseDoubleShell(
             string BulletName1,
-            string BulletName2, 
+            string BulletName2,
             string Type1,
             string Type2,
             double BallisticCaliber1,
@@ -312,14 +312,14 @@ namespace FCS
         private string Ballistic(
             double Sensivity,
             string Type,
-            double BulletMass, 
-            double Speed, 
+            double BulletMass,
+            double Speed,
             double BallisticCaliber,
             double Cx,
             double ExplosiveMass,
             double DamageMass,
             double DamageCaliber,
-            double demarrePenetrationK, 
+            double demarrePenetrationK,
             double demarreSpeedPow,
             double demarreMassPow,
             double demarreCaliberPow,
