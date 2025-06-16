@@ -16,7 +16,7 @@ demarreSpeedPow:1.47
 demarreMassPow:0.586
 demarreCaliberPow:1.15
 
-Name:105mm_l35
+Name:105mm_slspgr_m61
 Type:hesh_tank
 BulletMass:11.4
 BallisticCaliber:0.105

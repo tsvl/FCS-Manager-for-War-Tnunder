@@ -3,18 +3,18 @@ RocketPath:gameData/Weapons/groundModels_weapons/127mm_aim_9x_user_cannon.blkx
 ZoomIn:21.0
 ZoomOut:40.0
 
-Name:us_aim_120c_5_sam
+Name:us_aim_120c_7_sam
 Type:aam
-BulletMass:157.0
+BulletMass:161.4789
 BallisticCaliber:0.1778
 Speed:780.0
 Cx:0.38
 ExplosiveMass:8.6183
 ExplosiveType:pbxn_110
 
-Name:us_aim_120c_5_sam
+Name:us_aim_120c_7_sam
 Type:aam
-BulletMass:157.0
+BulletMass:161.4789
 BallisticCaliber:0.1778
 Speed:780.0
 Cx:0.38
@@ -27,7 +27,7 @@ BulletMass:85.2737
 BallisticCaliber:0.127
 Speed:780.0
 Cx:0.38
-ExplosiveMass:3.3566
+ExplosiveMass:3.5834
 ExplosiveType:pbxn_3
 
 Name:us_aim_9x
@@ -36,5 +36,5 @@ BulletMass:85.2737
 BallisticCaliber:0.127
 Speed:780.0
 Cx:0.38
-ExplosiveMass:3.3566
+ExplosiveMass:3.5834
 ExplosiveType:pbxn_3

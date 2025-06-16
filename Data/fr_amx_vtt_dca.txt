@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/12_7mm_M2_HB_user_machinegun_for_M15.blkx
-ZoomIn:9.8
-ZoomOut:10.8
+ZoomIn:21.0
+ZoomOut:40.0
 
 Name:ap_i_t_ball_M20
 Type:ap_i_t_ball_M20

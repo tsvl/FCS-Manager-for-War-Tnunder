@@ -6,7 +6,7 @@ Name:us_iris_t_sl
 Type:aam
 BulletMass:155.0
 BallisticCaliber:0.18
-Speed:710.0
+Speed:975.0
 Cx:0.38
 ExplosiveMass:4.5
 ExplosiveType:pbxn_110
@@ -15,7 +15,7 @@ Name:us_iris_t_sl
 Type:aam
 BulletMass:155.0
 BallisticCaliber:0.18
-Speed:710.0
+Speed:975.0
 Cx:0.38
 ExplosiveMass:4.5
 ExplosiveType:pbxn_110
