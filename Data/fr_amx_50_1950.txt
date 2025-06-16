@@ -31,7 +31,7 @@ Type:apcbc_tank
 BulletMass:10.91
 BallisticCaliber:0.09
 Speed:930.0
-Cx:0.38
+Cx:0.3033
 ExplosiveMass:0.14
 ExplosiveType:exp_d
 demarrePenetrationK:1.0
