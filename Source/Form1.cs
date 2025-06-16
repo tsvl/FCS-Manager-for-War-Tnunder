@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 using static System.Collections.Specialized.BitVector32;
 
@@ -547,15 +549,51 @@ namespace FCS
                             line = reader.ReadLine();
                             if (line.Contains("zoomOutFov"))
                             {
-                                ZoomOut = line.Split(':')[1];
-                                ZoomOut = ZoomOut.Replace(" ", "");
-                                ZoomOut = ZoomOut.Replace(",", "");
+                                string zoomData = line.Split(':')[1];
+                                if (zoomData.Contains("["))
+                                {
+                                    // Handle array case - get first value
+                                    line = reader.ReadLine();
+                                    while (line != null && !line.Trim().Any(char.IsDigit))
+                                    {
+                                        line = reader.ReadLine();
+                                    }
+                                    if (line != null)
+                                    {
+                                        ZoomOut = line.Trim().TrimEnd(',');
+                                    }
+                                }
+                                else
+                                {
+                                    // Handle single value case
+                                    ZoomOut = zoomData;
+                                    ZoomOut = ZoomOut.Replace(" ", "");
+                                    ZoomOut = ZoomOut.Replace(",", "");
+                                }
                             }
                             if (line.Contains("zoomInFov"))
                             {
-                                ZoomIn = line.Split(':')[1];
-                                ZoomIn = ZoomIn.Replace(" ", "");
-                                ZoomIn = ZoomIn.Replace(",", "");
+                                string zoomData = line.Split(':')[1];
+                                if (zoomData.Contains("["))
+                                {
+                                    // Handle array case - get first value
+                                    line = reader.ReadLine();
+                                    while (line != null && !line.Trim().Any(char.IsDigit))
+                                    {
+                                        line = reader.ReadLine();
+                                    }
+                                    if (line != null)
+                                    {
+                                        ZoomIn = line.Trim().TrimEnd(',');
+                                    }
+                                }
+                                else
+                                {
+                                    // Handle single value case
+                                    ZoomIn = zoomData;
+                                    ZoomIn = ZoomIn.Replace(" ", "");
+                                    ZoomIn = ZoomIn.Replace(",", "");
+                                }
                             }
                         }
                     }
@@ -566,15 +604,51 @@ namespace FCS
                             line = reader.ReadLine();
                             if (line.Contains("zoomOutFov"))
                             {
-                                ZoomOut2 = line.Split(':')[1];
-                                ZoomOut2 = ZoomOut2.Replace(" ", "");
-                                ZoomOut2 = ZoomOut2.Replace(",", "");
+                                string zoomData = line.Split(':')[1];
+                                if (zoomData.Contains("["))
+                                {
+                                    // Handle array case - get first value
+                                    line = reader.ReadLine();
+                                    while (line != null && !line.Trim().Any(char.IsDigit))
+                                    {
+                                        line = reader.ReadLine();
+                                    }
+                                    if (line != null)
+                                    {
+                                        ZoomOut2 = line.Trim().TrimEnd(',');
+                                    }
+                                }
+                                else
+                                {
+                                    // Handle single value case
+                                    ZoomOut2 = zoomData;
+                                    ZoomOut2 = ZoomOut2.Replace(" ", "");
+                                    ZoomOut2 = ZoomOut2.Replace(",", "");
+                                }
                             }
                             if (line.Contains("zoomInFov"))
                             {
-                                ZoomIn2 = line.Split(':')[1];
-                                ZoomIn2 = ZoomIn2.Replace(" ", "");
-                                ZoomIn2 = ZoomIn2.Replace(",", "");
+                                string zoomData = line.Split(':')[1];
+                                if (zoomData.Contains("["))
+                                {
+                                    // Handle array case - get first value
+                                    line = reader.ReadLine();
+                                    while (line != null && !line.Trim().Any(char.IsDigit))
+                                    {
+                                        line = reader.ReadLine();
+                                    }
+                                    if (line != null)
+                                    {
+                                        ZoomIn2 = line.Trim().TrimEnd(',');
+                                    }
+                                }
+                                else
+                                {
+                                    // Handle single value case
+                                    ZoomIn2 = zoomData;
+                                    ZoomIn2 = ZoomIn2.Replace(" ", "");
+                                    ZoomIn2 = ZoomIn2.Replace(",", "");
+                                }
                             }
                         }
                     }
