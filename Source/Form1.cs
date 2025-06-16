@@ -781,7 +781,24 @@ namespace FCS
                                     }
                                     if (data.Contains("\"bulletName\""))
                                     {
+                                      if (data.Contains("["))
+                                      {
+                                        while (true)
+                                        {
+                                          i++;
+                                          if (i >= lines.Length) break;
+                                          var nextLine = lines[i].Trim();
+                                          if (nextLine.StartsWith("\""))
+                                          {
+                                            BulletName = nextLine.Split('\"')[1].TrimEnd(',');
+                                            break;
+                                          }
+                                        }
+                                      }
+                                      else
+                                      {
                                         BulletName = data.Split('\"')[3];
+                                      }
                                     }
                                     if (data.Contains("\"mass\""))
                                     {
