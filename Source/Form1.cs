@@ -4796,11 +4796,6 @@ namespace FCS
 
         private void groupBox1_Click(object sender, EventArgs e)
         {
-            NumOfClicks++;
-            if(NumOfClicks >= 5)
-            {
-                button1.Visible = true;
-            }
         }
     }
 }
