@@ -624,29 +624,36 @@ namespace FCS
                         if ((data.Contains("\"bullet\":")) || (data.Contains("\"rocket\":")))
                         {
                             bool HasModule = true;
-                            if (lines[i - 1].Contains("{"))
+                            if (i > 0 && lines[i - 1].Contains("{"))
                             {
                                 HasModule = false;
-                                BulletName = lines[i - 1].Split('\"')[1];
-                                if (TankData.Contains(BulletName))
+                                // Search upwards for a line with a quote (and colon)
+                                int nameLine = i - 1;
+                                while (nameLine >= 0 && (!lines[nameLine].Contains("\"") || !lines[nameLine].Contains(":")))
+                                    nameLine--;
+                                if (nameLine >= 0)
                                 {
-                                    HasModule = true;
+                                    BulletName = lines[nameLine].Split('\"')[1];
+                                    if (TankData.Contains(BulletName))
+                                    {
+                                        HasModule = true;
+                                    }
+                                    BulletName = BulletName.Replace("_cn_", "_");
+                                    BulletName = BulletName.Replace("_fr_", "_");
+                                    BulletName = BulletName.Replace("_germ_", "_");
+                                    BulletName = BulletName.Replace("_il_", "_");
+                                    BulletName = BulletName.Replace("_it_", "_");
+                                    BulletName = BulletName.Replace("_jp_", "_");
+                                    BulletName = BulletName.Replace("_sw_", "_");
+                                    BulletName = BulletName.Replace("_uk_", "_");
+                                    BulletName = BulletName.Replace("_us_", "_");
+                                    BulletName = BulletName.Replace("_ussr_", "_");
+                                    if (TankData.Contains(BulletName))
+                                    {
+                                        HasModule = true;
+                                    }
+                                    BulletName = null;
                                 }
-                                BulletName = BulletName.Replace("_cn_", "_");
-                                BulletName = BulletName.Replace("_fr_", "_");
-                                BulletName = BulletName.Replace("_germ_", "_");
-                                BulletName = BulletName.Replace("_il_", "_");
-                                BulletName = BulletName.Replace("_it_", "_");
-                                BulletName = BulletName.Replace("_jp_", "_");
-                                BulletName = BulletName.Replace("_sw_", "_");
-                                BulletName = BulletName.Replace("_uk_", "_");
-                                BulletName = BulletName.Replace("_us_", "_");
-                                BulletName = BulletName.Replace("_ussr_","_");
-                                if (TankData.Contains(BulletName))
-                                {
-                                    HasModule = true;
-                                }
-                                BulletName = null;
                             }
                             if (HasModule == true)
                             {
