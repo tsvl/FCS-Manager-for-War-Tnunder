@@ -21,7 +21,7 @@ Cx:0.38
 ExplosiveMass:8.6183
 ExplosiveType:pbxn_110
 
-Name:us_aim_9x
+Name:us_aim_9x_block_2
 Type:aam
 BulletMass:85.2737
 BallisticCaliber:0.127
@@ -30,7 +30,7 @@ Cx:0.38
 ExplosiveMass:3.5834
 ExplosiveType:pbxn_3
 
-Name:us_aim_9x
+Name:us_aim_9x_block_2
 Type:aam
 BulletMass:85.2737
 BallisticCaliber:0.127

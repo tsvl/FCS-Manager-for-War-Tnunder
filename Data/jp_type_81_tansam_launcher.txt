@@ -1,6 +1,7 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/160mm_sam_1c_launcher_user_cannon.blkx
 ZoomIn:6.14
 ZoomOut:12.29
+HasLaser
 
 Name:160mm_sam_1c
 Type:aam

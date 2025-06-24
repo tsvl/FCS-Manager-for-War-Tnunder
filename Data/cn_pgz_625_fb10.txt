@@ -41,6 +41,19 @@ demarreSpeedPow:1.43
 demarreMassPow:0.71
 demarreCaliberPow:1.07
 
+Name:30mm_china_PTFP
+Type:ahead_tank
+BulletMass:0.36
+BallisticCaliber:0.03
+Speed:980.0
+Cx:0.29841
+ExplosiveMass:0.0005
+ExplosiveType:clx_663
+demarrePenetrationK:0.55
+demarreSpeedPow:1.43
+demarreMassPow:0.71
+demarreCaliberPow:1.07
+
 Name:fb10_rocket
 Type:aam
 BulletMass:46.0

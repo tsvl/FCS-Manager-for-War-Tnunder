@@ -41,10 +41,10 @@ ExplosiveMass:0.05
 ExplosiveType:smoke_composition
 DamageMass:0.57
 
-Name:105mm_imi_m413
-Type:apds_fs_long_tank
-BulletMass:3.79
-BallisticCaliber:0.026
+Name:105mm_imi_m426
+Type:apds_fs_long_l30_tank
+BulletMass:4.4
+BallisticCaliber:0.024
 Speed:1455.0
-Cx:0.4
-DamageCaliber:0.026
+Cx:0.53008
+DamageCaliber:0.024
