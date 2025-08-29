@@ -31,7 +31,7 @@ Type:sap_hei_tank
 BulletMass:2.7
 BallisticCaliber:0.057
 Speed:950.0
-Cx:0.38
+Cx:0.33771
 ExplosiveMass:0.3
 ExplosiveType:hexal
 demarrePenetrationK:0.46

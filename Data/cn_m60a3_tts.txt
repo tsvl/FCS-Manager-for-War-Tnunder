@@ -63,3 +63,11 @@ APDS2500:246.7
 APDS3000:236.7
 APDS4000:215.5
 APDS10000:50.0
+
+Name:105mm_dm33
+Type:apds_fs_long_tank
+BulletMass:3.79
+BallisticCaliber:0.026
+Speed:1455.0
+Cx:0.4
+DamageCaliber:0.026

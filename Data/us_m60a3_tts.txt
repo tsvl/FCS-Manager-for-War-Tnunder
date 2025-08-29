@@ -3,7 +3,20 @@ ZoomIn:9.21
 ZoomOut:28.63
 HasLaser
 
-Name:105mm_m456a2
+Name:105mm_m728
+Type:apds_l15_tank
+BulletMass:4.53
+BallisticCaliber:0.061
+Speed:1426.0
+Cx:0.17605
+DamageMass:3.2
+DamageCaliber:0.061
+demarrePenetrationK:0.989
+demarreSpeedPow:1.47
+demarreMassPow:0.586
+demarreCaliberPow:1.15
+
+Name:105mm_m456
 Type:heat_fs_tank
 BulletMass:10.5
 BallisticCaliber:0.105
