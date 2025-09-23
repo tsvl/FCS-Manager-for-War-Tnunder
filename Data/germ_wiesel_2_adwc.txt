@@ -5,7 +5,7 @@ HasLaser
 
 Name:70mm_fim_92e
 Type:aam
-BulletMass:2.0
+BulletMass:10.1
 BallisticCaliber:0.07
 Speed:670.0
 Cx:0.38
@@ -14,7 +14,7 @@ ExplosiveType:hta
 
 Name:70mm_fim_92e
 Type:aam
-BulletMass:2.0
+BulletMass:10.1
 BallisticCaliber:0.07
 Speed:670.0
 Cx:0.38
@@ -23,7 +23,7 @@ ExplosiveType:hta
 
 Name:70mm_fim_92k
 Type:aam
-BulletMass:2.0
+BulletMass:10.1
 BallisticCaliber:0.07
 Speed:670.0
 Cx:0.38

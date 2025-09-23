@@ -43,7 +43,7 @@ demarreCaliberPow:1.07
 
 Name:130mm_djb_1_smoke
 Type:smoke_tank
-BulletMass:33.77
+BulletMass:32.47
 BallisticCaliber:0.13
 Speed:935.0
 Cx:0.38

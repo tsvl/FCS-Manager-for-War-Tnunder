@@ -10,7 +10,7 @@ BallisticCaliber:0.155
 Speed:933.0
 Cx:0.38
 ExplosiveMass:8.4
-ExplosiveType:tnt
+ExplosiveType:dhl_1
 demarrePenetrationK:0.15
 demarreSpeedPow:1.43
 demarreMassPow:0.71
@@ -23,7 +23,7 @@ BallisticCaliber:0.155
 Speed:933.0
 Cx:0.38
 ExplosiveMass:8.4
-ExplosiveType:tnt
+ExplosiveType:dhl_1
 demarrePenetrationK:0.15
 demarreSpeedPow:1.43
 demarreMassPow:0.71

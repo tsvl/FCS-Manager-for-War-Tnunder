@@ -1,6 +1,6 @@
 WeaponPath:gameData/Weapons/groundModels_weapons/125mm_2A46MS_user_cannon.blkx
-ZoomIn:9.21
-ZoomOut:10.21
+ZoomIn:6.29873
+ZoomOut:16.4246
 HasLaser
 
 Name:125mm_3bk_12m

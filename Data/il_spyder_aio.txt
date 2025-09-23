@@ -23,7 +23,7 @@ ExplosiveType:hbx
 
 Name:il_derby_sam
 Type:aam
-BulletMass:2.0
+BulletMass:118.0
 BallisticCaliber:0.16
 Speed:825.0
 Cx:0.38

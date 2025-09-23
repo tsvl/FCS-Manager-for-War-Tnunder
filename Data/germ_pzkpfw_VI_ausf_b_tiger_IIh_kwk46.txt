@@ -4,11 +4,11 @@ ZoomOut:29.7
 
 Name:105mm_pzrg_39
 Type:apcbc_tank
-BulletMass:15.6
+BulletMass:15.9
 BallisticCaliber:0.105
 Speed:1005.0
 Cx:0.28
-ExplosiveMass:0.24
+ExplosiveMass:0.1
 ExplosiveType:ph_salz_h10
 demarrePenetrationK:1.0
 demarreSpeedPow:1.43

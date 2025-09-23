@@ -1,4 +1,4 @@
-WeaponPath:gameData/Weapons/groundModels_weapons/20mm_FlaK38_user_cannon.blkx
+WeaponPath:gameData/Weapons/groundModels_weapons/20mm_FlaK38_wirbelwind_user_cannon.blkx
 ZoomIn:21.0
 ZoomOut:40.0
 

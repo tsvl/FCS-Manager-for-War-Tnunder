@@ -29,7 +29,7 @@ demarreMassPow:0.71
 demarreCaliberPow:1.07
 
 Name:47mm_m39_apc
-Type:apbc_usa_tank
+Type:aphe_tank
 BulletMass:1.44
 BallisticCaliber:0.047
 Speed:630.0
