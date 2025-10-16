@@ -4,7 +4,7 @@ ZoomOut:29.7
 
 Name:105mm_pzrg_39
 Type:apcbc_tank
-BulletMass:15.9
+BulletMass:16.9
 BallisticCaliber:0.105
 Speed:1005.0
 Cx:0.28
