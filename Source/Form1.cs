@@ -10,7 +10,7 @@ namespace FCS
 
     public partial class Form1 : Form
     {
-        int NumOfClicks = 0;
+
         DateTime StartTime = DateTime.Now;
         bool IsRuning = false;
         int SpeedNumbers = 0;
