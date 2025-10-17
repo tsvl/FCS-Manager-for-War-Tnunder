@@ -1926,7 +1926,7 @@ namespace FCS
                         {
                             LangData = sr.ReadToEnd();
                         }
-                        using (System.IO.StreamReader sr = new System.IO.StreamReader(Dataminepath + "\\lang.vromfs.bin_u\\lang\\FCS.csv"))
+                        using (System.IO.StreamReader sr = new System.IO.StreamReader("Localization\\FCS.csv"))
                         {
                             LangData2 = sr.ReadToEnd();
                         }
