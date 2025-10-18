@@ -155,7 +155,7 @@ crosshair_distances {";
                     double Distance = ((i + 1) * 200);
                     if (Distance >= FixedDistance)
                     {
-                        if ( Distance >= 1000)
+                        if (Distance >= 1000)
                         {
                             SizeText1 = -0.0085;
                             SizeText2 = 0.027;

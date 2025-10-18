@@ -252,18 +252,18 @@ line{line:p4=-" + Convert.ToString(Math.Round(CenterThousand * 4, 2)) + @",0,-" 
             {
                 for (int i = Convert.ToInt16(FixedDistance / 200) - 1; i < FixedDistances.GetLength(0) && FixedDistances[i] < Angle; i += Convert.ToInt16(FixedDistance / 200))
                 {
-					double Distance = ((i + 1) * 200);
+                    double Distance = ((i + 1) * 200);
                     if (Distance >= FixedDistance)
                     {
                         fcs_data += @"
-line{line:p4="+Convert.ToString(Math.Round(Math.Atan(Length/Distance)*1000/2,2))+@","+Convert.ToString(Math.Round(FixedDistances[i],2))+@","+Convert.ToString(Math.Round(Math.Atan(Width/Distance)*1000/2,2))+@","+Convert.ToString(Math.Round(FixedDistances[i],2))+@";move:b=yes;thousandth:b=yes}
-line{line:p4=-"+Convert.ToString(Math.Round(Math.Atan(Length/Distance)*1000/2,2))+@","+Convert.ToString(Math.Round(FixedDistances[i],2))+@",-"+Convert.ToString(Math.Round(Math.Atan(Width/Distance)*1000/2,2))+@","+Convert.ToString(Math.Round(FixedDistances[i],2))+@";move:b=yes;thousandth:b=yes}";
+line{line:p4=" + Convert.ToString(Math.Round(Math.Atan(Length / Distance) * 1000 / 2, 2)) + @"," + Convert.ToString(Math.Round(FixedDistances[i], 2)) + @"," + Convert.ToString(Math.Round(Math.Atan(Width / Distance) * 1000 / 2, 2)) + @"," + Convert.ToString(Math.Round(FixedDistances[i], 2)) + @";move:b=yes;thousandth:b=yes}
+line{line:p4=-" + Convert.ToString(Math.Round(Math.Atan(Length / Distance) * 1000 / 2, 2)) + @"," + Convert.ToString(Math.Round(FixedDistances[i], 2)) + @",-" + Convert.ToString(Math.Round(Math.Atan(Width / Distance) * 1000 / 2, 2)) + @"," + Convert.ToString(Math.Round(FixedDistances[i], 2)) + @";move:b=yes;thousandth:b=yes}";
                     }
                 }
             }
             fcs_data += @"
-line{line:p4="+Convert.ToString(Math.Round(CenterThousand,2))+@",0,"+Convert.ToString(Math.Round(InnerDiameter/2,2))+@",0;move:b=yes;thousandth:b=yes}
-line{line:p4=-"+Convert.ToString(Math.Round(CenterThousand,2))+@",0,-"+Convert.ToString(Math.Round(InnerDiameter/2,2))+@",0;move:b=yes;thousandth:b=yes}
+line{line:p4=" + Convert.ToString(Math.Round(CenterThousand, 2)) + @",0," + Convert.ToString(Math.Round(InnerDiameter / 2, 2)) + @",0;move:b=yes;thousandth:b=yes}
+line{line:p4=-" + Convert.ToString(Math.Round(CenterThousand, 2)) + @",0,-" + Convert.ToString(Math.Round(InnerDiameter / 2, 2)) + @",0;move:b=yes;thousandth:b=yes}
 }";
             return fcs_data;
         }

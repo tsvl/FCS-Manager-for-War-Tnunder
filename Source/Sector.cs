@@ -269,7 +269,6 @@ line{line:p4=" + Convert.ToString(Math.Round(Math.Cos(Math.PI * 60 / 180) * Inne
 line{line:p4=-" + Convert.ToString(Math.Round(Math.Cos(Math.PI * 60 / 180) * InnerDiameter / 2, 2)) + @",-" + Convert.ToString(Math.Round(Math.Sin(Math.PI * 60 / 180) * InnerDiameter / 2, 2)) + @",-" + Convert.ToString(Math.Round(Math.Cos(Math.PI * 60 / 180) * SizeMax, 2)) + @",-" + Convert.ToString(Math.Round(Math.Sin(Math.PI * 60 / 180) * SizeMax, 2)) + @";move:b=false;thousandth:b=yes}
 }";
             }
-
             return fcs_data;
         }
     }

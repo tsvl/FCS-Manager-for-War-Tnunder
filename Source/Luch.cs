@@ -167,7 +167,7 @@ drawTexts {
 		size:r = 0.7
 	}
 	text {
-		text:t = " + '\u0022' + Zoom + Convert.ToString(Math.Round(73.7 / ZoomIn, 1)) + "x" +'\u0022' + @"
+		text:t = " + '\u0022' + Zoom + Convert.ToString(Math.Round(73.7 / ZoomIn, 1)) + "x" + '\u0022' + @"
 		pos:p2 = " + Convert.ToString(Math.Round(Size / 150 * 125, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 42, 2)) + @"
         align:i = 1
 		thousandth:b = yes
@@ -380,7 +380,7 @@ drawLines {
 	line { line:p4 = -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 106, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
 	line { line:p4 = -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 24, 2)) + @"; thousandth:b = yes;}
 	line { line:p4 = " + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 106, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = " + Convert.ToString(Math.Round(Size / 150 * 130,3)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 24, 2)) + @"; thousandth:b = yes;}
+	line { line:p4 = " + Convert.ToString(Math.Round(Size / 150 * 130, 3)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 24, 2)) + @"; thousandth:b = yes;}
 	line { line:p4 = -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 106, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
 	line { line:p4 = -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 24, 2)) + @"; thousandth:b = yes;}
 	
@@ -399,11 +399,11 @@ drawLines {
 	line { line:p4 = " + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", 0, " + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", " + Convert.ToString(Math.Round(1.5 * Size / 150, 2)) + @"; thousandth:b = yes;}
 	line { line:p4 = -" + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", 0, -" + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", " + Convert.ToString(Math.Round(1.5 * Size / 150, 2)) + @"; thousandth:b = yes;}";
             }
-			fcs_data += @"
+            fcs_data += @"
 
 	// Barrel lift line
 	line { line:p4 = 0, -" + Convert.ToString(Math.Round(1.5 * Size / 150, 2)) + @", 0, -" + Convert.ToString(Math.Round(3 * Size / 150, 2)) + @"; move:b = yes; thousandth:b = yes;}";
-            
+
             CurrentAngle = 0.0;
             if (DrawCrosshairDist == true)
             {
@@ -434,16 +434,16 @@ drawLines {
             CurrentAngle = ScrollAngle;
             for (int i = 0; i < BallisticData.GetLength(1) && i < MaxLength && BallisticData[0, i] < MaxDistance; i++)
             {
-				double CurrentDistance = BallisticData[0, i];
-				double FrameHeight = Math.Atan(Height / CurrentDistance) * 1000 / 2;
-				double FrameLength = Math.Atan(Length / CurrentDistance) * 1000 / 2;
+                double CurrentDistance = BallisticData[0, i];
+                double FrameHeight = Math.Atan(Height / CurrentDistance) * 1000 / 2;
+                double FrameLength = Math.Atan(Length / CurrentDistance) * 1000 / 2;
                 if (CurrentDistance < 100)
                 {
                     CurrentDistance = Math.Floor(CurrentDistance / 5) * 5;
                 }
                 if ((CurrentDistance >= 100) && (CurrentDistance < 400))
                 {
-					CurrentDistance = Math.Floor(CurrentDistance / 10) * 10;
+                    CurrentDistance = Math.Floor(CurrentDistance / 10) * 10;
                 }
                 if (CurrentDistance >= 400)
                 {

@@ -1,32 +1,31 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace FCS
 {
     public static class Luch_Lite
     {
         public static string Create(
-			double Speed,
-            double ZoomIn,
-            double ZoomOut,
-            double Sensitivity,
-            bool DrawCrosshairDist,
-            double CrosshairDistSize,
-            double CrosshairDistAdditonalSize,
-            bool DrawCrosshairDistText,
-            string rangefinderProgressBarColor1,
-            string rangefinderProgressBarColor2,
-            string crosshairLightColor,
-            double lineSizeMult,
-            double Length,
-            double Height,
-            double PointThickness,
-            string Milliradian,
-            double TargetSpeed,
-            string BallisticDataFromFile
-            )
+                double Speed,
+                double ZoomIn,
+                double ZoomOut,
+                double Sensitivity,
+                bool DrawCrosshairDist,
+                double CrosshairDistSize,
+                double CrosshairDistAdditonalSize,
+                bool DrawCrosshairDistText,
+                string rangefinderProgressBarColor1,
+                string rangefinderProgressBarColor2,
+                string crosshairLightColor,
+                double lineSizeMult,
+                double Length,
+                double Height,
+                double PointThickness,
+                string Milliradian,
+                double TargetSpeed,
+                string BallisticDataFromFile
+                )
         {
             TargetSpeed /= 3.6;
             double Size = 7.1429 * ZoomIn;
@@ -90,7 +89,6 @@ namespace FCS
                 Angle = Size / 150 * 55;
             }
             double CenterThousand = Math.Atan(TargetSpeed / (Speed * 0.9)) * 1000;
-
             string fcs_data = @"drawAdditionalLines:b = no
 thousandth:t = " + '\u0022' + Milliradian + '\u0022' + @"
 
@@ -106,7 +104,7 @@ detectAllyOffset:p2 = 120, -0.01
 
 fontSizeMult:r = " + Convert.ToString(Math.Round(0.75 * Scaling * Size / 150, 5)) + @"
 lineSizeMult:r = " + Convert.ToString(lineSizeMult) + @"
-                    
+
 drawCentralLineVert:b = no
 drawCentralLineHorz:b = no
 drawSightMask:b = no
@@ -121,15 +119,15 @@ crosshair_distances { }
 crosshair_hor_ranges{ }
 
 drawCircles {
-	// Barrel lift point
-	circle {
-		segment:p2 = 0.0, 360.0; 
-		pos:p2 = 0.0, 0.0; 
-		diameter:r = 0.1; 
-		size:r = " + Convert.ToString(Math.Round(PointThickness * Size / 150, 2)) + @"; 
-		move:b = yes;
-		thousandth:b = yes;
-	}
+    // Barrel lift point
+    circle {
+        segment:p2 = 0.0, 360.0;
+        pos:p2 = 0.0, 0.0;
+        diameter:r = 0.1;
+        size:r = " + Convert.ToString(Math.Round(PointThickness * Size / 150, 2)) + @";
+        move:b = yes;
+        thousandth:b = yes;
+    }
 }
 
 drawTexts {";
@@ -150,17 +148,17 @@ drawTexts {";
                         align = -align;
                         fcs_data += @"
     text {
-		text:t = " + '\u0022' + Convert.ToString(Distance) + '\u0022' + @"
+        text:t = " + '\u0022' + Convert.ToString(Distance) + '\u0022' + @"
         align:i = " + Convert.ToString(align) + @"
-		pos:p2 = " + Convert.ToString(Math.Round(Position * Size / 150, 2)) + @", " + Convert.ToString(Math.Round(FixedDistances[i], 2)) + @"
-		radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
-		radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
-		radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
-		moveRadial:b = yes
-		thousandth:b = yes
-		size:r = 0.5
-		highlight:b = yes
-	}";
+        pos:p2 = " + Convert.ToString(Math.Round(Position * Size / 150, 2)) + @", " + Convert.ToString(Math.Round(FixedDistances[i], 2)) + @"
+        radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
+        radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
+        radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
+        moveRadial:b = yes
+        thousandth:b = yes
+        size:r = 0.5
+        highlight:b = yes
+    }";
                     }
                 }
                 fcs_data += @"
@@ -174,17 +172,17 @@ drawTexts {";
                         Position = CenterThousand * i;
                         fcs_data += @"
     text {
-		text:t = " + '\u0022' + Convert.ToString(Math.Round(TargetSpeed * 3.6 * Math.Abs(Convert.ToDouble(i)))) + '\u0022' + @"
+        text:t = " + '\u0022' + Convert.ToString(Math.Round(TargetSpeed * 3.6 * Math.Abs(Convert.ToDouble(i)))) + '\u0022' + @"
         align:i = 0
-		pos:p2 = " + Convert.ToString(Math.Round(Position, 2)) + @", -" + Convert.ToString(Math.Round(2 * Size / 150, 2)) + @"
-		radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
-		radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
-		radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
-		moveRadial:b = yes
-		thousandth:b = yes
-		size:r = 0.5
-		highlight:b = yes
-	}";
+        pos:p2 = " + Convert.ToString(Math.Round(Position, 2)) + @", -" + Convert.ToString(Math.Round(2 * Size / 150, 2)) + @"
+        radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
+        radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
+        radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
+        moveRadial:b = yes
+        thousandth:b = yes
+        size:r = 0.5
+        highlight:b = yes
+    }";
 
                     }
                     i++;
@@ -194,28 +192,28 @@ drawTexts {";
 }
 
 drawLines {
-	// Interface
-	// Central triangle
-	line { line:p4 = 0, 0, " + Convert.ToString(Math.Round(2.5 * Size / 150, 2)) + @", " + Convert.ToString(Math.Round(InnerDiameter, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = 0, 0, -" + Convert.ToString(Math.Round(2.5 * Size / 150, 2)) + @", " + Convert.ToString(Math.Round(InnerDiameter, 2)) + @"; thousandth:b = yes;}";
+    // Interface
+    // Central triangle
+    line { line:p4 = 0, 0, " + Convert.ToString(Math.Round(2.5 * Size / 150, 2)) + @", " + Convert.ToString(Math.Round(InnerDiameter, 2)) + @"; thousandth:b = yes;}
+    line { line:p4 = 0, 0, -" + Convert.ToString(Math.Round(2.5 * Size / 150, 2)) + @", " + Convert.ToString(Math.Round(InnerDiameter, 2)) + @"; thousandth:b = yes;}";
             fcs_data += @"
 
-	// Lines of preemptive";
+    // Lines of preemptive";
             for (int i = 1; i <= 5; i++)
             {
                 fcs_data += @"
-	// " + Convert.ToString(i * 10 - 5) + @" km/h
-	line { line:p4 = " + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", 0, " + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", " + Convert.ToString(Math.Round(0.75 * Size / 150, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = -" + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", 0, -" + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", " + Convert.ToString(Math.Round(0.75 * Size / 150, 2)) + @"; thousandth:b = yes;}
+    // " + Convert.ToString(i * 10 - 5) + @" km/h
+    line { line:p4 = " + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", 0, " + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", " + Convert.ToString(Math.Round(0.75 * Size / 150, 2)) + @"; thousandth:b = yes;}
+    line { line:p4 = -" + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", 0, -" + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", " + Convert.ToString(Math.Round(0.75 * Size / 150, 2)) + @"; thousandth:b = yes;}
 
-	// " + Convert.ToString(i * 10) + @" km/h
-	line { line:p4 = " + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", 0, " + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", " + Convert.ToString(Math.Round(1.5 * Size / 150, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = -" + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", 0, -" + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", " + Convert.ToString(Math.Round(1.5 * Size / 150, 2)) + @"; thousandth:b = yes;}";
+    // " + Convert.ToString(i * 10) + @" km/h
+    line { line:p4 = " + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", 0, " + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", " + Convert.ToString(Math.Round(1.5 * Size / 150, 2)) + @"; thousandth:b = yes;}
+    line { line:p4 = -" + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", 0, -" + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", " + Convert.ToString(Math.Round(1.5 * Size / 150, 2)) + @"; thousandth:b = yes;}";
             }
-			fcs_data += @"
+            fcs_data += @"
 
-	// Barrel lift line
-	line { line:p4 = 0, -" + Convert.ToString(Math.Round(InnerDiameter, 2)) + @", 0, -" + Convert.ToString(Math.Round(3 * Size / 150, 2)) + @"; move:b = yes; thousandth:b = yes;}";
+    // Barrel lift line
+    line { line:p4 = 0, -" + Convert.ToString(Math.Round(InnerDiameter, 2)) + @", 0, -" + Convert.ToString(Math.Round(3 * Size / 150, 2)) + @"; move:b = yes; thousandth:b = yes;}";
 
             CurrentAngle = 0.0;
             if (DrawCrosshairDist == true)
@@ -223,10 +221,10 @@ drawLines {
                 fcs_data += @"
 
     // Range correction lines
-	// Central line
+    // Central line
     line { line:p4 = 0, " + Convert.ToString(Math.Round(InnerDiameter, 2)) + @", 0, " + Convert.ToString(Math.Round(Angle + (Size / 150 * Angle / 20), 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
 
-	// Distance lines";
+    // Distance lines";
                 double LastDistance = 0;
                 for (int i = Convert.ToInt16(FixedDistance / 200) - 1; i < FixedDistances.GetLength(0) && FixedDistances[i] < Angle; i += Convert.ToInt16(FixedDistance / 200))
                 {
@@ -246,16 +244,16 @@ drawLines {
             CurrentAngle = ScrollAngle;
             for (int i = 0; i < BallisticData.GetLength(1) && i < MaxLength && BallisticData[0, i] < MaxDistance; i++)
             {
-				double CurrentDistance = BallisticData[0, i];
-				double FrameHeight = Math.Atan(Height / CurrentDistance) * 1000 / 2;
-				double FrameLength = Math.Atan(Length / CurrentDistance) * 1000 / 2;
+                double CurrentDistance = BallisticData[0, i];
+                double FrameHeight = Math.Atan(Height / CurrentDistance) * 1000 / 2;
+                double FrameLength = Math.Atan(Length / CurrentDistance) * 1000 / 2;
                 if (CurrentDistance < 100)
                 {
                     CurrentDistance = Math.Floor(CurrentDistance / 5) * 5;
                 }
                 if ((CurrentDistance >= 100) && (CurrentDistance < 400))
                 {
-					CurrentDistance = Math.Floor(CurrentDistance / 10) * 10;
+                    CurrentDistance = Math.Floor(CurrentDistance / 10) * 10;
                 }
                 if (CurrentDistance >= 400)
                 {
@@ -266,15 +264,15 @@ drawLines {
     // " + Convert.ToString(CurrentDistance) + @"m
     // Top and bottom horizontal lines
     line { line:p4 = -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @", -" + Convert.ToString(Math.Round(FrameLength / 2, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
-	line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength / 2, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
-	line { line:p4 = -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", -" + Convert.ToString(Math.Round(FrameLength / 2, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
-	line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength / 2, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
-	
-	// Right and left vertical lines
-	line { line:p4 = -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @", -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
-	line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
-	line { line:p4 = -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
-	line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}";
+    line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength / 2, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
+    line { line:p4 = -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", -" + Convert.ToString(Math.Round(FrameLength / 2, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
+    line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength / 2, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
+
+    // Right and left vertical lines
+    line { line:p4 = -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @", -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
+    line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
+    line { line:p4 = -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
+    line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}";
                 CurrentAngle += ScrollAngle;
             }
             fcs_data += @"

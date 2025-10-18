@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using static System.Collections.Specialized.BitVector32;
 
 namespace FCS
 {
@@ -174,7 +173,7 @@ namespace FCS
             }
         }
 
-        private double HePenetration (double ExplosiveMass, string ExplosiveType)
+        private double HePenetration(double ExplosiveMass, string ExplosiveType)
         {
             double HePenetration = 0;
             string[,] ExplosiveTypes = {
@@ -346,7 +345,7 @@ namespace FCS
             }
             double ScrollStep = 2.8 * Math.Pow(Sensivity, 2);
             double[,] BallisticData = new double[3, Convert.ToInt32(Math.Floor((Math.PI / 180) * 60 * 1000 / ScrollStep))];
-            for (int i = 0; i < BallisticData.GetLength(1); i ++)
+            for (int i = 0; i < BallisticData.GetLength(1); i++)
             {
                 BallisticData[0, i] = 0.00001;
             }
@@ -781,24 +780,24 @@ namespace FCS
                                     }
                                     if (data.Contains("\"bulletName\""))
                                     {
-                                      if (data.Contains("["))
-                                      {
-                                        while (true)
+                                        if (data.Contains("["))
                                         {
-                                          i++;
-                                          if (i >= lines.Length) break;
-                                          var nextLine = lines[i].Trim();
-                                          if (nextLine.StartsWith("\""))
-                                          {
-                                            BulletName = nextLine.Split('\"')[1].TrimEnd(',');
-                                            break;
-                                          }
+                                            while (true)
+                                            {
+                                                i++;
+                                                if (i >= lines.Length) break;
+                                                var nextLine = lines[i].Trim();
+                                                if (nextLine.StartsWith("\""))
+                                                {
+                                                    BulletName = nextLine.Split('\"')[1].TrimEnd(',');
+                                                    break;
+                                                }
+                                            }
                                         }
-                                      }
-                                      else
-                                      {
-                                        BulletName = data.Split('\"')[3];
-                                      }
+                                        else
+                                        {
+                                            BulletName = data.Split('\"')[3];
+                                        }
                                     }
                                     if (data.Contains("\"mass\""))
                                     {
@@ -1538,7 +1537,7 @@ namespace FCS
                 string LangName2 = null;
                 while ((line2 = reader2.ReadLine()) != null)
                 {
-                    if (line2.IndexOf(Path.GetFileNameWithoutExtension(file) + "_shop", StringComparison.OrdinalIgnoreCase) >= 0 )
+                    if (line2.IndexOf(Path.GetFileNameWithoutExtension(file) + "_shop", StringComparison.OrdinalIgnoreCase) >= 0)
                     {
                         LangName2 = line2.Split(';')[0];
                         LangName2 = LangName2.Replace("\"", "");
@@ -2174,7 +2173,7 @@ namespace FCS
                                                         line1 = String.Empty;
                                                         while ((line1 = reader3.ReadLine()) != null)
                                                         {
-                                                            if (line1.Contains("\"" +RocketName + "\""))
+                                                            if (line1.Contains("\"" + RocketName + "\""))
                                                             {
                                                                 LangRocketName = line1.Split(';')[Pos];
                                                                 LangRocketName = LangRocketName.Replace("\"", "");
@@ -2792,7 +2791,7 @@ namespace FCS
                                                         line1 = String.Empty;
                                                         while ((line1 = reader3.ReadLine()) != null)
                                                         {
-                                                            if (line1.Contains("\"" +RocketName + "\""))
+                                                            if (line1.Contains("\"" + RocketName + "\""))
                                                             {
                                                                 LangRocketName = line1.Split(';')[Pos];
                                                                 LangRocketName = LangRocketName.Replace("\"", "");
@@ -3090,7 +3089,7 @@ namespace FCS
                                                         line1 = String.Empty;
                                                         while ((line1 = reader3.ReadLine()) != null)
                                                         {
-                                                            if (line1.Contains("\"" +RocketName + "\""))
+                                                            if (line1.Contains("\"" + RocketName + "\""))
                                                             {
                                                                 LangRocketName = line1.Split(';')[Pos];
                                                                 LangRocketName = LangRocketName.Replace("\"", "");
@@ -3475,7 +3474,7 @@ namespace FCS
                                                             line1 = String.Empty;
                                                             while ((line1 = reader3.ReadLine()) != null)
                                                             {
-                                                                if (line1.Contains("\"" +RocketName + "\""))
+                                                                if (line1.Contains("\"" + RocketName + "\""))
                                                                 {
                                                                     LangRocketName = line1.Split(';')[6];
                                                                     LangRocketName = LangRocketName.Replace("\"", "");
@@ -3502,7 +3501,7 @@ namespace FCS
                                                             line1 = String.Empty;
                                                             while ((line1 = reader3.ReadLine()) != null)
                                                             {
-                                                                if (line1.Contains("\"" +RocketName + "\""))
+                                                                if (line1.Contains("\"" + RocketName + "\""))
                                                                 {
                                                                     LangRocketName = line1.Split(';')[6];
                                                                     LangRocketName = LangRocketName.Replace("\"", "");
@@ -3718,7 +3717,7 @@ namespace FCS
                                     BulletNameForBallistic = BulletNameForBallistic.Remove(0, BulletNameForBallistic.IndexOf("mm_"));
                                     BulletNameForBallistic = BulletNameForBallistic.Replace("mm_", "");
                                 }
-                                if ((Type != "sam" && Type != "atgm" && Type != "rocket" && Type != "aam" && Type != "smoke" && Type != "shrapnel" && Type != "he" && Type != "practice") || (Type == "he" && BallisticCaliber >=  0.1))
+                                if ((Type != "sam" && Type != "atgm" && Type != "rocket" && Type != "aam" && Type != "smoke" && Type != "shrapnel" && Type != "he" && Type != "practice") || (Type == "he" && BallisticCaliber >= 0.1))
                                 {
                                     if (textBox2.Text != "Ballistic path")
                                     {
