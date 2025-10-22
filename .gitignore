@@ -441,7 +441,11 @@ FodyWeavers.xsd
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
-UserSights/**
+UserSights/
 !UserSights/.gitkeep
-Datamine/aces.vromfs.bin_u
-Datamine/lang.vromfs.bin_u
+Datamine/aces.vromfs.bin_u/gamedata/units/tankmodels/*
+!Datamine/aces.vromfs.bin_u/gamedata/units/tankmodels/.gitkeep
+Datamine/aces.vromfs.bin_u/gamedata/weapons/groundmodels_weapons/*
+!Datamine/aces.vromfs.bin_u/gamedata/weapons/groundmodels_weapons/.gitkeep
+Datamine/lang.vromfs.bin_u/lang/*
+!Datamine/lang.vromfs.bin_u/lang/.gitkeep
