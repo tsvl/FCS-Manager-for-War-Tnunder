@@ -441,4 +441,7 @@ FodyWeavers.xsd
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
-UserSights/
+UserSights/**
+!UserSights/.gitkeep
+Datamine/aces.vromfs.bin_u
+Datamine/lang.vromfs.bin_u
