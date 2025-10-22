@@ -1921,7 +1921,7 @@ namespace FCS
 
                         string LangData = null;
                         string LangData2 = null;
-                        using (System.IO.StreamReader sr = new System.IO.StreamReader(Dataminepath + "\\lang.vromfs.bin_u\\lang\\units_weaponry.csv"))
+                        using (System.IO.StreamReader sr = new System.IO.StreamReader("Localization\\units_weaponry.csv"))
                         {
                             LangData = sr.ReadToEnd();
                         }
