@@ -1,14 +1,25 @@
-> [!NOTE]
-> major cleanup in progress, excuse the mess in here at the moment
+# FCS Generator
 
-## To generate sights using the included data files
+Updated version of the sight generation tool by  [Assin127](https://live.warthunder.com/user/58909037/). Cleanup in progress, but should be mostly functional. Currently depends on the (manually updated) included data files or a provided datamine source, but extraction from local install will be integrated later.
 
-  1. Run FCS.exe
-  2. Select your sight type, options, language, and settings
-  3. Click "Make Sights"
-  4. Copy the output files from `UserSights` to your War Thunder install's `UserSights` folder (e.g. `C:\Program Files (x86)\Steam\steamapps\common\War Thunder\UserSights`) - or just set the output path directly to that folder in FCS settings if you want.
+## Download
 
-## Updating data files from your local install
+- Get the latest Windows build from GitHub [Releases](https://github.com/tsvl/WT-FCSGenerator/releases).
+- Download the newest ZIP, extract it anywhere, and run `FCS.exe`.
+
+## Quick start (most users)
+
+  1. Run `FCS.exe`.
+  2. Select language, sight type, and any options you want. The default paths are fine—no changes required.
+  3. Click the "Make Sights" button.
+  4. Copy the output files from the `UserSights` folder next to `FCS.exe` into your War Thunder install’s `UserSights` folder (e.g., `C:\Program Files (x86)\Steam\steamapps\common\War Thunder\UserSights`).
+     - Optional: you can set the output path in FCS settings directly to the game’s `UserSights` folder to skip the copy step.
+
+>[!NOTE]
+> Make sure you select sight type and language before pressing "Make Sights" or it will sit on NaN% forever (lol).
+> The other two buttons ("Convert Datamine" and "Make Ballistic") are only needed if you want to update the data files from your local War Thunder install or another datamine source (see below). If you just want to generate sights using the included data files, you can ignore them.
+
+## Advanced: update data files from your local install
 
 The included data files are manually updated and may be out of date. Data extraction will be moved into the actual tool soon, but in the meantime you can use the provided PowerShell script `Update-Datamine.ps1` along with the `wt_ext_cli` tool to extract the latest data files from your install.
 
