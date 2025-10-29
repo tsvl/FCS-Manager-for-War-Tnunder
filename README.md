@@ -4,10 +4,11 @@ Updated version of the sight generation tool by  [Assin127](https://live.warthun
 
 ## Download
 
-- Get the latest Windows build from GitHub [Releases](https://github.com/tsvl/WT-FCSGenerator/releases).
+- Requires .NET 10 runtime: [Download here](https://dotnet.microsoft.com/en-us/download/dotnet/10.0).
+- Get the latest Windows build from [Releases](https://github.com/tsvl/WT-FCSGenerator/releases).
 - Download the newest ZIP, extract it anywhere, and run `FCS.exe`.
 
-## Quick start (most users)
+## Quick start
 
   1. Run `FCS.exe`.
   2. Select language, sight type, and any options you want. The default paths are fine—no changes required.
