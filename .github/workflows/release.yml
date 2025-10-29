@@ -1,0 +1,52 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  release-windows:
+    name: Release (Windows)
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET (preview allowed)
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore
+        shell: pwsh
+        run: |
+          dotnet restore .\src\FCS.csproj
+
+      - name: Build
+        shell: pwsh
+        run: |
+          dotnet build .\src\FCS.csproj -c Release --no-restore
+
+      - name: Publish
+        shell: pwsh
+        run: |
+          dotnet publish .\src\FCS.csproj -c Release --no-build
+
+      - name: Create ZIP archive
+        id: zip
+        shell: pwsh
+        run: |
+          $publishDir = "src\bin\Release\net10.0-windows\win-x64\publish\"
+          $zipPath = Join-Path $env:RUNNER_TEMP ("WT-FCSGenerator-" + $env:GITHUB_REF_NAME + "-windows-x64.zip")
+          Compress-Archive -Path (Join-Path $publishDir '*') -DestinationPath $zipPath -Force
+          "zip_path=$zipPath" | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
+
+      - name: Upload release asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ steps.zip.outputs.zip_path }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
