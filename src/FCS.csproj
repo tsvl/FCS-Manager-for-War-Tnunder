@@ -17,4 +17,23 @@
     <SelfContained>false</SelfContained>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
   </PropertyGroup>
+  <!-- Copy runtime asset folders to both build and publish outputs -->
+  <ItemGroup>
+    <!-- Assets -->
+    <Content Include="$(MSBuildProjectDirectory)\..\assets\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+      <TargetPath>%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+    </Content>
+    <!-- Readme -->
+    <Content Include="$(MSBuildProjectDirectory)\..\README.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+      <TargetPath>%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+    </Content>
+  </ItemGroup>
+  <!-- Ensure empty directories exist in publish output even if they contain no files -->
+  <Target Name="EnsureEmptyAssetFolders" AfterTargets="Publish">
+    <MakeDir Directories="$(PublishDir)Datamine;$(PublishDir)UserSights" />
+  </Target>
 </Project>
