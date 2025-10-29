@@ -11,8 +11,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>none</DebugType>
   </PropertyGroup>
-  <!-- Publish as a single-file, self-contained executable for Windows x64 -->
-  <PropertyGroup>
+  <!-- Publish as a single-file, framework-dependent executable for Windows x64 (Release only) -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>false</SelfContained>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
@@ -34,7 +34,7 @@
   </ItemGroup>
   <!-- Ensure empty directories exist in publish output even if they contain no files -->
   <Target Name="EnsureEmptyAssetFolders" AfterTargets="Publish">
-    <MakeDir Directories="$(PublishDir)Datamine;$(PublishDir)UserSights;$(PublishDir)Usersights" />
+    <MakeDir Directories="$(PublishDir)Datamine;$(PublishDir)UserSights" />
   </Target>
   <!-- Create placeholder files so CI artifacts preserve these directories even when empty -->
   <Target Name="AddEmptyDirPlaceholders" AfterTargets="Publish">
