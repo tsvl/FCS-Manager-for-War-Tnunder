@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - dev
+      - 'feature/**'
+      - 'tsvl/**'
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  build-windows:
+    name: Build (Windows)
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET (preview allowed)
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+          include-prerelease: true
+
+      - name: Restore
+        shell: pwsh
+        run: |
+          dotnet restore .\src\FCS.csproj
+
+      - name: Build
+        shell: pwsh
+        run: |
+          dotnet build .\src\FCS.csproj -c Release --no-restore
+
+      - name: Publish
+        shell: pwsh
+        run: |
+          dotnet publish .\src\FCS.csproj -c Release --no-build
+
+      - name: Upload publish artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: FCS-publish-win-x64
+          path: src\bin\Release\net10.0-windows\win-x64\publish\
