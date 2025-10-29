@@ -34,6 +34,15 @@
   </ItemGroup>
   <!-- Ensure empty directories exist in publish output even if they contain no files -->
   <Target Name="EnsureEmptyAssetFolders" AfterTargets="Publish">
-    <MakeDir Directories="$(PublishDir)Datamine;$(PublishDir)UserSights" />
+    <MakeDir Directories="$(PublishDir)Datamine;$(PublishDir)UserSights;$(PublishDir)Usersights" />
+  </Target>
+  <!-- Create placeholder files so CI artifacts preserve these directories even when empty -->
+  <Target Name="AddEmptyDirPlaceholders" AfterTargets="Publish">
+    <!-- Datamine -->
+    <WriteLinesToFile File="$(PublishDir)Datamine\README.txt" Lines="This folder holds War Thunder datamine extracts used by FCS. It may be empty in the distributed build." Overwrite="false" Encoding="UTF-8" />
+    <!-- UserSights (canonical) -->
+    <WriteLinesToFile File="$(PublishDir)UserSights\README.txt" Lines="Generated sights will be written here by FCS at runtime. You can point this to your game's UserSights folder." Overwrite="false" Encoding="UTF-8" />
+    <!-- Usersights (legacy/lowercase variant to match existing assets) -->
+    <WriteLinesToFile File="$(PublishDir)Usersights\README.txt" Lines="Generated sights will be written here by FCS at runtime. You can point this to your game's UserSights folder." Overwrite="false" Encoding="UTF-8" />
   </Target>
 </Project>
