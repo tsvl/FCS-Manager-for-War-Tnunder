@@ -143,15 +143,15 @@ move:b = yes
 crosshairDistHorSizeMain:p2=0.0, 0.004
 distanceCorrectionPos:p2=" + DistancePos[0] + @"," + DistancePos[1] + @"
 drawDistanceCorrection:b=";
-            switch (DrawDisnaceCorrections)
+            if (DrawDisnaceCorrections == true)
             {
-                case true:
-                    fcs_data += "yes";
-                    break;
-                default:
-                    fcs_data += "no";
-                    break;
+                fcs_data += "yes";
             }
+            else
+            {
+                fcs_data += "no";
+            }
+
             fcs_data += @"
 crosshair_distances {";
             if (SightType != "Rocket")
