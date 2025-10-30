@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 
@@ -138,8 +138,15 @@ drawCentralLineHorz:b=no
 crosshairLightColor:c=" + crosshairLightColor + @"
 distanceCorrectionPos:p2=" + DistancePos[0] + @"," + DistancePos[1] + @"
 drawDistanceCorrection:b=";
-            if (DrawDisnaceCorrections == true) fcs_data += "yes";
-            else fcs_data += "no";
+            if (DrawDisnaceCorrections == true)
+            {
+                fcs_data += "yes";
+            }
+            else
+            {
+                fcs_data += "no";
+            }
+
             fcs_data += @"
 crosshair_distances{}
 crosshair_hor_ranges{}

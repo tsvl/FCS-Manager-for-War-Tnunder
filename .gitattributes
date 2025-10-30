@@ -1,0 +1,41 @@
+# Auto detect text files and normalize line endings to LF in the repository
+* text=auto eol=lf
+
+# Explicitly declare text files you want to always be normalized and converted to LF on checkout
+*.cs text eol=lf
+*.csproj text eol=lf
+*.sln text eol=lf
+*.slnx text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.xml text eol=lf
+*.txt text eol=lf
+*.ps1 text eol=lf
+*.psm1 text eol=lf
+*.psd1 text eol=lf
+
+# Windows-specific files that should always use CRLF
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.sln text eol=crlf working-tree-encoding=UTF-16LE-BOM
+
+# Shell scripts should always use LF
+*.sh text eol=lf
+
+# Binary files (mark as binary to prevent line ending conversion)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.dll binary
+*.exe binary
+*.zip binary
+*.7z binary
+*.pdf binary
+
+# Linguist overrides (for GitHub language stats)
+assets/** linguist-generated=true
+*.Designer.cs linguist-generated=true
