@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -58,7 +58,9 @@ namespace FCS
             {
                 bool flag = e.NewValue == CheckState.Checked;
                 for (int i = 1; i < lb.Items.Count; i++)
+                {
                     lb.SetItemChecked(i, flag);
+                }
             }
         }
         private bool CanUseDoubleShell(
@@ -703,7 +705,10 @@ namespace FCS
                                 // Search upwards for a line with a quote (and colon)
                                 int nameLine = i - 1;
                                 while (nameLine >= 0 && (!lines[nameLine].Contains("\"") || !lines[nameLine].Contains(":")))
+                                {
                                     nameLine--;
+                                }
+
                                 if (nameLine >= 0)
                                 {
                                     BulletName = lines[nameLine].Split('\"')[1];
@@ -785,7 +790,11 @@ namespace FCS
                                             while (true)
                                             {
                                                 i++;
-                                                if (i >= lines.Length) break;
+                                                if (i >= lines.Length)
+                                                {
+                                                    break;
+                                                }
+
                                                 var nextLine = lines[i].Trim();
                                                 if (nextLine.StartsWith("\""))
                                                 {

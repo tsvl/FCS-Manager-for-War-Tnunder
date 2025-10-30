@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 
@@ -126,7 +126,7 @@ detectAllyOffset:p2 = 120, -0.01
 
 fontSizeMult:r = " + Convert.ToString(Math.Round(0.75 * Scaling * Size / 150, 5)) + @"
 lineSizeMult:r = " + Convert.ToString(lineSizeMult) + @"
-                    
+
 drawCentralLineVert:b = no
 drawCentralLineHorz:b = no
 drawSightMask:b = no
@@ -141,102 +141,102 @@ crosshair_distances { }
 crosshair_hor_ranges{ }
 
 drawCircles {
-	// Barrel lift point
-	circle {
-		segment:p2 = 0.0, 360.0; 
-		pos:p2 = 0.0, 0.0; 
-		diameter:r = 0.1; 
-		size:r = " + Convert.ToString(Math.Round(PointThickness * Size / 150, 2)) + @"; 
-		move:b = yes;
-		thousandth:b = yes;
-	}
+    // Barrel lift point
+    circle {
+        segment:p2 = 0.0, 360.0;
+        pos:p2 = 0.0, 0.0;
+        diameter:r = 0.1;
+        size:r = " + Convert.ToString(Math.Round(PointThickness * Size / 150, 2)) + @";
+        move:b = yes;
+        thousandth:b = yes;
+    }
 }
 
 drawTexts {
-	// Static text
+    // Static text
     text {
-		text:t = " + '\u0022' + Capture + '\u0022' + @"
-		pos:p2 = -" + Convert.ToString(Math.Round(Size / 150 * 125, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 37, 2)) + @"
-		thousandth:b = yes
-		size:r = 0.7
-	}
-	text {
-		text:t = " + '\u0022' + SightName + '\u0022' + @"
-		pos:p2 = -" + Convert.ToString(Math.Round(Size / 150 * 125, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 42, 2)) + @"
-		thousandth:b = yes
-		size:r = 0.7
-	}
-	text {
-		text:t = " + '\u0022' + Zoom + Convert.ToString(Math.Round(73.7 / ZoomIn, 1)) + "x" + '\u0022' + @"
-		pos:p2 = " + Convert.ToString(Math.Round(Size / 150 * 125, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 42, 2)) + @"
-        align:i = 1
-		thousandth:b = yes
-		size:r = 0.7
-	}
-	text {
-		text:t = " + '\u0022' + @"L=" + Convert.ToString(Length) + Meters + @"   H=" + Convert.ToString(Height) + Meters + '\u0022' + @"
- 		pos:p2 = " + Convert.ToString(Math.Round(Size / 150 * 125, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 37, 2)) + @"
-		align:i = 1
+        text:t = " + '\u0022' + Capture + '\u0022' + @"
+        pos:p2 = -" + Convert.ToString(Math.Round(Size / 150 * 125, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 37, 2)) + @"
         thousandth:b = yes
-		size:r = 0.7
-	}
-	text {
-		text:t = " + '\u0022' + LangName + '\u0022' + @"
+        size:r = 0.7
+    }
+    text {
+        text:t = " + '\u0022' + SightName + '\u0022' + @"
+        pos:p2 = -" + Convert.ToString(Math.Round(Size / 150 * 125, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 42, 2)) + @"
+        thousandth:b = yes
+        size:r = 0.7
+    }
+    text {
+        text:t = " + '\u0022' + Zoom + Convert.ToString(Math.Round(73.7 / ZoomIn, 1)) + "x" + '\u0022' + @"
+        pos:p2 = " + Convert.ToString(Math.Round(Size / 150 * 125, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 42, 2)) + @"
+        align:i = 1
+        thousandth:b = yes
+        size:r = 0.7
+    }
+    text {
+        text:t = " + '\u0022' + @"L=" + Convert.ToString(Length) + Meters + @"   H=" + Convert.ToString(Height) + Meters + '\u0022' + @"
+         pos:p2 = " + Convert.ToString(Math.Round(Size / 150 * 125, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 37, 2)) + @"
+        align:i = 1
+        thousandth:b = yes
+        size:r = 0.7
+    }
+    text {
+        text:t = " + '\u0022' + LangName + '\u0022' + @"
         pos:p2 = -" + Convert.ToString(Math.Round(Size / 150 * 65, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 45, 2)) + @"
-		thousandth:b = yes
-		size:r = 0.7
-	}
-	text {
-		text:t = " + '\u0022' + Convert.ToString(Math.Round(Speed)) + " " + Meters + "/" + Seconds + '\u0022' + @"
-		pos:p2 = -" + Convert.ToString(Math.Round(Size / 150 * 65, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 51, 2)) + @"
-		thousandth:b = yes
-		size:r = 0.7
-	}";
+        thousandth:b = yes
+        size:r = 0.7
+    }
+    text {
+        text:t = " + '\u0022' + Convert.ToString(Math.Round(Speed)) + " " + Meters + "/" + Seconds + '\u0022' + @"
+        pos:p2 = -" + Convert.ToString(Math.Round(Size / 150 * 65, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 51, 2)) + @"
+        thousandth:b = yes
+        size:r = 0.7
+    }";
             if (Type == "heat" || Type == "hesh" || Type == "he")
             {
                 fcs_data += @"
 
     text {
-		text:t = " + '\u0022' + ArmorPower + " " + Millimetrs + '\u0022' + @"
-		pos:p2 = -" + Convert.ToString(Math.Round(Size * 38 / 150, 2)) + @", " + Convert.ToString(Math.Round(Size * 51 / 150, 2)) + @"
-		align:i = 0
+        text:t = " + '\u0022' + ArmorPower + " " + Millimetrs + '\u0022' + @"
+        pos:p2 = -" + Convert.ToString(Math.Round(Size * 38 / 150, 2)) + @", " + Convert.ToString(Math.Round(Size * 51 / 150, 2)) + @"
+        align:i = 0
         thousandth:b = yes
-		size:r = 0.7
-	}";
+        size:r = 0.7
+    }";
             }
             if (LangRocketName != null)
             {
                 fcs_data += @"
 
-	text {
-		text:t = " + '\u0022' + LangRocketName + '\u0022' + @"
-		pos:p2 = " + Convert.ToString(Math.Round(Size * 10 / 150, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 45, 2)) + @"
-		thousandth:b = yes
-		size:r = 0.7
-	}
+    text {
+        text:t = " + '\u0022' + LangRocketName + '\u0022' + @"
+        pos:p2 = " + Convert.ToString(Math.Round(Size * 10 / 150, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 45, 2)) + @"
+        thousandth:b = yes
+        size:r = 0.7
+    }
 
-	text {
-		text:t = " + '\u0022' + Convert.ToString(Math.Round(Speed)) + " " + Meters + "/" + Seconds + '\u0022' + @"
-		pos:p2 = " + Convert.ToString(Math.Round(Size * 10 / 150, 2)) + @", " + Convert.ToString(Math.Round(Size * 51 / 150, 2)) + @"
-		thousandth:b = yes
-		size:r = 0.7
-	}";
+    text {
+        text:t = " + '\u0022' + Convert.ToString(Math.Round(Speed)) + " " + Meters + "/" + Seconds + '\u0022' + @"
+        pos:p2 = " + Convert.ToString(Math.Round(Size * 10 / 150, 2)) + @", " + Convert.ToString(Math.Round(Size * 51 / 150, 2)) + @"
+        thousandth:b = yes
+        size:r = 0.7
+    }";
             }
             if (RocketArmorPower != 0)
             {
                 fcs_data += @"
 
     text {
-		text:t = " + '\u0022' + RocketArmorPower + " " + Millimetrs + '\u0022' + @"
+        text:t = " + '\u0022' + RocketArmorPower + " " + Millimetrs + '\u0022' + @"
         align:i = 0
-		pos:p2 = " + Convert.ToString(Math.Round(Size * 38 / 150, 2)) + @", " + Convert.ToString(Math.Round(Size * 51 / 150, 2)) + @"
-		thousandth:b = yes
-		size:r = 0.7
-	}";
+        pos:p2 = " + Convert.ToString(Math.Round(Size * 38 / 150, 2)) + @", " + Convert.ToString(Math.Round(Size * 51 / 150, 2)) + @"
+        thousandth:b = yes
+        size:r = 0.7
+    }";
             }
             fcs_data += @"
 
-	// Dynamic text";
+    // Dynamic text";
             double CurrentAngle = 0.0;
             if ((DrawCrosshairDist == true) && (DrawCrosshairDistText == true))
             {
@@ -251,28 +251,28 @@ drawTexts {
                         double Distance = (i + 1) * 2;
                         fcs_data += @"
     text {
-		text:t = " + '\u0022' + Convert.ToString(Distance) + '\u0022' + @"
+        text:t = " + '\u0022' + Convert.ToString(Distance) + '\u0022' + @"
         align:i = 1
-		pos:p2 = -" + Convert.ToString(Math.Round(Position * Size / 150, 2)) + @", " + Convert.ToString(Math.Round(FixedDistances[i], 2)) + @"
-		radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
-		radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
-		radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
-		moveRadial:b = yes
-		thousandth:b = yes
-		size:r = 0.5
-		highlight:b = yes
-	}
+        pos:p2 = -" + Convert.ToString(Math.Round(Position * Size / 150, 2)) + @", " + Convert.ToString(Math.Round(FixedDistances[i], 2)) + @"
+        radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
+        radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
+        radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
+        moveRadial:b = yes
+        thousandth:b = yes
+        size:r = 0.5
+        highlight:b = yes
+    }
     text {
-		text:t = " + '\u0022' + Convert.ToString(Distance) + '\u0022' + @"
-		pos:p2 = " + Convert.ToString(Math.Round(Position * Size / 150, 2)) + @", " + Convert.ToString(Math.Round(FixedDistances[i], 2)) + @"
-		radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
-		radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
-		radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
-		moveRadial:b = yes
-		thousandth:b = yes
-		size:r = 0.5
-		highlight:b = yes
-	}";
+        text:t = " + '\u0022' + Convert.ToString(Distance) + '\u0022' + @"
+        pos:p2 = " + Convert.ToString(Math.Round(Position * Size / 150, 2)) + @", " + Convert.ToString(Math.Round(FixedDistances[i], 2)) + @"
+        radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
+        radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
+        radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
+        moveRadial:b = yes
+        thousandth:b = yes
+        size:r = 0.5
+        highlight:b = yes
+    }";
                     }
                 }
                 fcs_data += @"
@@ -286,17 +286,17 @@ drawTexts {
                         Position = CenterThousand * i;
                         fcs_data += @"
     text {
-		text:t = " + '\u0022' + Convert.ToString(Math.Round(TargetSpeed * 3.6 * Math.Abs(Convert.ToDouble(i)))) + '\u0022' + @"
+        text:t = " + '\u0022' + Convert.ToString(Math.Round(TargetSpeed * 3.6 * Math.Abs(Convert.ToDouble(i)))) + '\u0022' + @"
         align:i = 0
-		pos:p2 = " + Convert.ToString(Math.Round(Position, 2)) + @", -" + Convert.ToString(Math.Round(2 * Size / 150, 2)) + @"
-		radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
-		radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
-		radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
-		moveRadial:b = yes
-		thousandth:b = yes
-		size:r = 0.5
-		highlight:b = yes
-	}";
+        pos:p2 = " + Convert.ToString(Math.Round(Position, 2)) + @", -" + Convert.ToString(Math.Round(2 * Size / 150, 2)) + @"
+        radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
+        radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
+        radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
+        moveRadial:b = yes
+        thousandth:b = yes
+        size:r = 0.5
+        highlight:b = yes
+    }";
 
                     }
                     i++;
@@ -319,49 +319,49 @@ drawTexts {
                     CurrentDistance = Math.Floor(CurrentDistance / 50) * 50;
                 }
                 fcs_data += @"
-                           
-	text {
-		text:t = " + '\u0022' + Convert.ToString(BallisticData[1, i]) + Seconds + '\u0022' + @"
+
+    text {
+        text:t = " + '\u0022' + Convert.ToString(BallisticData[1, i]) + Seconds + '\u0022' + @"
         align:i = 1
-		pos:p2 = -" + Convert.ToString(Math.Round(Size * 10 / 150, 2)) + @", " + Convert.ToString(Math.Round(Size * 51 / 150, 2)) + @"
-		radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
-		radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
-		radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
-		moveRadial:b = yes
-		thousandth:b = yes
-		size:r = 0.7
-	}";
+        pos:p2 = -" + Convert.ToString(Math.Round(Size * 10 / 150, 2)) + @", " + Convert.ToString(Math.Round(Size * 51 / 150, 2)) + @"
+        radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
+        radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
+        radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
+        moveRadial:b = yes
+        thousandth:b = yes
+        size:r = 0.7
+    }";
                 if (LangRocketName != null)
                 {
                     fcs_data += @"
 
     text {
-		text:t = " + '\u0022' + Convert.ToString(Math.Round(CurrentDistance / RocketSpeed, 1)) + Seconds + '\u0022' + @"
+        text:t = " + '\u0022' + Convert.ToString(Math.Round(CurrentDistance / RocketSpeed, 1)) + Seconds + '\u0022' + @"
         align:i = 1
-		pos:p2 = " + Convert.ToString(Math.Round(Size / 150 * 65, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 51, 2)) + @"
-		radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
-		radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
-		radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
-		moveRadial:b = yes
-		thousandth:b = yes
-		size:r = 0.7
-	}";
+        pos:p2 = " + Convert.ToString(Math.Round(Size / 150 * 65, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 51, 2)) + @"
+        radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
+        radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
+        radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
+        moveRadial:b = yes
+        thousandth:b = yes
+        size:r = 0.7
+    }";
                 }
                 if (BallisticData[2, i] != 0)
                 {
                     fcs_data += @"
 
     text {
-		text:t = " + '\u0022' + Convert.ToString(BallisticData[2, i]) + " " + Millimetrs + '\u0022' + @"
-		pos:p2 = -" + Convert.ToString(Math.Round(Size * 38 / 150, 2)) + @", " + Convert.ToString(Math.Round(Size * 51 / 150, 2)) + @"
+        text:t = " + '\u0022' + Convert.ToString(BallisticData[2, i]) + " " + Millimetrs + '\u0022' + @"
+        pos:p2 = -" + Convert.ToString(Math.Round(Size * 38 / 150, 2)) + @", " + Convert.ToString(Math.Round(Size * 51 / 150, 2)) + @"
         align:i = 0
-		radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
-		radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
-		radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
-		moveRadial:b = yes
-		thousandth:b = yes
-		size:r = 0.7
-	}";
+        radialAngle:r = " + Convert.ToString(CurrentAngle) + @"
+        radialCenter:p2 = " + Convert.ToString(Radius) + @", 0
+        radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"
+        moveRadial:b = yes
+        thousandth:b = yes
+        size:r = 0.7
+    }";
                 }
                 CurrentAngle += ScrollAngle;
             }
@@ -369,52 +369,52 @@ drawTexts {
 }
 
 drawLines {
-	// Interface
-	// Central triangle
-	line { line:p4 = 0, 0, " + Convert.ToString(Math.Round(2.5 * Size / 150, 2)) + @", " + Convert.ToString(Math.Round(InnerDiameter, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = 0, 0, -" + Convert.ToString(Math.Round(2.5 * Size / 150, 2)) + @", " + Convert.ToString(Math.Round(InnerDiameter, 2)) + @"; thousandth:b = yes;}
+    // Interface
+    // Central triangle
+    line { line:p4 = 0, 0, " + Convert.ToString(Math.Round(2.5 * Size / 150, 2)) + @", " + Convert.ToString(Math.Round(InnerDiameter, 2)) + @"; thousandth:b = yes;}
+    line { line:p4 = 0, 0, -" + Convert.ToString(Math.Round(2.5 * Size / 150, 2)) + @", " + Convert.ToString(Math.Round(InnerDiameter, 2)) + @"; thousandth:b = yes;}
 
-	// External interface lines
-	line { line:p4 = " + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 106, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = " + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 24, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 106, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 24, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = " + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 106, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = " + Convert.ToString(Math.Round(Size / 150 * 130, 3)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 24, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 106, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 24, 2)) + @"; thousandth:b = yes;}
-	
-	line { line:p4 = -" + Convert.ToString(Math.Round(Size / 150 * 65, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 10, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = " + Convert.ToString(Math.Round(Size / 150 * 65, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 10, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
+    // External interface lines
+    line { line:p4 = " + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 106, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
+    line { line:p4 = " + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 24, 2)) + @"; thousandth:b = yes;}
+    line { line:p4 = -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 106, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
+    line { line:p4 = -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 24, 2)) + @"; thousandth:b = yes;}
+    line { line:p4 = " + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 106, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
+    line { line:p4 = " + Convert.ToString(Math.Round(Size / 150 * 130, 3)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 24, 2)) + @"; thousandth:b = yes;}
+    line { line:p4 = -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 106, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
+    line { line:p4 = -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 130, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 24, 2)) + @"; thousandth:b = yes;}
 
-	// Lines of preemptive";
+    line { line:p4 = -" + Convert.ToString(Math.Round(Size / 150 * 65, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", -" + Convert.ToString(Math.Round(Size / 150 * 10, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
+    line { line:p4 = " + Convert.ToString(Math.Round(Size / 150 * 65, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 10, 2)) + @", " + Convert.ToString(Math.Round(Size / 150 * 48, 2)) + @"; thousandth:b = yes;}
+
+    // Lines of preemptive";
             for (int i = 1; i <= 5; i++)
             {
                 fcs_data += @"
-	// " + Convert.ToString(i * 10 - 5) + @" km/h
-	line { line:p4 = " + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", 0, " + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", " + Convert.ToString(Math.Round(0.75 * Size / 150, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = -" + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", 0, -" + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", " + Convert.ToString(Math.Round(0.75 * Size / 150, 2)) + @"; thousandth:b = yes;}
+    // " + Convert.ToString(i * 10 - 5) + @" km/h
+    line { line:p4 = " + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", 0, " + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", " + Convert.ToString(Math.Round(0.75 * Size / 150, 2)) + @"; thousandth:b = yes;}
+    line { line:p4 = -" + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", 0, -" + Convert.ToString(Math.Round(CenterThousand * i - CenterThousand / 2, 2)) + @", " + Convert.ToString(Math.Round(0.75 * Size / 150, 2)) + @"; thousandth:b = yes;}
 
-	// " + Convert.ToString(i * 10) + @" km/h
-	line { line:p4 = " + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", 0, " + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", " + Convert.ToString(Math.Round(1.5 * Size / 150, 2)) + @"; thousandth:b = yes;}
-	line { line:p4 = -" + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", 0, -" + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", " + Convert.ToString(Math.Round(1.5 * Size / 150, 2)) + @"; thousandth:b = yes;}";
+    // " + Convert.ToString(i * 10) + @" km/h
+    line { line:p4 = " + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", 0, " + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", " + Convert.ToString(Math.Round(1.5 * Size / 150, 2)) + @"; thousandth:b = yes;}
+    line { line:p4 = -" + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", 0, -" + Convert.ToString(Math.Round(CenterThousand * i, 2)) + @", " + Convert.ToString(Math.Round(1.5 * Size / 150, 2)) + @"; thousandth:b = yes;}";
             }
             fcs_data += @"
 
-	// Barrel lift line
-	line { line:p4 = 0, -" + Convert.ToString(Math.Round(1.5 * Size / 150, 2)) + @", 0, -" + Convert.ToString(Math.Round(3 * Size / 150, 2)) + @"; move:b = yes; thousandth:b = yes;}";
+    // Barrel lift line
+    line { line:p4 = 0, -" + Convert.ToString(Math.Round(1.5 * Size / 150, 2)) + @", 0, -" + Convert.ToString(Math.Round(3 * Size / 150, 2)) + @"; move:b = yes; thousandth:b = yes;}";
 
             CurrentAngle = 0.0;
             if (DrawCrosshairDist == true)
             {
                 fcs_data += @"
 
-	// Dynamic lines
+    // Dynamic lines
     // Range correction lines
-	// Central line
+    // Central line
     line { line:p4 = 0, " + Convert.ToString(Math.Round(InnerDiameter, 2)) + @", 0, " + Convert.ToString(Math.Round(Angle, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
 
-	// Distance lines";
+    // Distance lines";
                 double LastDistance = 0;
                 for (int i = Convert.ToInt16(FixedDistance / 200) - 1; i < FixedDistances.GetLength(0) && FixedDistances[i] < Angle; i += Convert.ToInt16(FixedDistance / 200))
                 {
@@ -454,15 +454,15 @@ drawLines {
     // " + Convert.ToString(CurrentDistance) + @"m
     // Top and bottom horizontal lines
     line { line:p4 = -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @", -" + Convert.ToString(Math.Round(FrameLength / 2, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
-	line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength / 2, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
-	line { line:p4 = -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", -" + Convert.ToString(Math.Round(FrameLength / 2, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
-	line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength / 2, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
-	
-	// Right and left vertical lines
-	line { line:p4 = -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @", -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
-	line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
-	line { line:p4 = -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
-	line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}";
+    line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength / 2, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
+    line { line:p4 = -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", -" + Convert.ToString(Math.Round(FrameLength / 2, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
+    line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength / 2, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
+
+    // Right and left vertical lines
+    line { line:p4 = -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @", -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
+    line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength, 2)) + @", -" + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
+    line { line:p4 = -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", -" + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}
+    line { line:p4 = " + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight, 2)) + @", " + Convert.ToString(Math.Round(FrameLength, 2)) + @", " + Convert.ToString(Math.Round(FrameHeight / 2, 2)) + @"; radialAngle:r = " + Convert.ToString(CurrentAngle) + @"; radialCenter:p2 = " + Convert.ToString(Radius) + @", 0; radialMoveSpeed:r = " + Convert.ToString(Math.Round(ScrollSpeed, 5)) + @"; moveRadial:b = yes; thousandth:b = yes;}";
                 CurrentAngle += ScrollAngle;
             }
             fcs_data += @"

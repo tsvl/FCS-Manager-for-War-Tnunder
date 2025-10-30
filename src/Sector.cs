@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using System.Net.Sockets;
@@ -143,8 +143,15 @@ move:b = yes
 crosshairDistHorSizeMain:p2=0.0, 0.004
 distanceCorrectionPos:p2=" + DistancePos[0] + @"," + DistancePos[1] + @"
 drawDistanceCorrection:b=";
-            if (DrawDisnaceCorrections == true) fcs_data += "yes";
-            else fcs_data += "no";
+            if (DrawDisnaceCorrections == true)
+            {
+                fcs_data += "yes";
+            }
+            else
+            {
+                fcs_data += "no";
+            }
+
             fcs_data += @"
 crosshair_distances {";
             if (SightType != "Rocket")
