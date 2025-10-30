@@ -51,7 +51,7 @@ jobs:
       - name: Restore
         shell: pwsh
         run: |
-          dotnet restore ./src/FCS.csproj
+          dotnet restore ./src/FCS.csproj -r win-x64
 
       - name: Publish (win-x64, Release)
         shell: pwsh
