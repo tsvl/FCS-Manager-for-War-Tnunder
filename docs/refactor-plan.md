@@ -58,7 +58,7 @@ We’ll replace the app stage-by-stage with external command-line tools. Initial
 
 #### CLI spec (first cut)
 
-- Command: fcs2 convert-datamine (details: see docs/cli-stage1.md)
+- Command: fcs convert-datamine (details: see docs/cli-stage1.md)
 - Inputs:
    - --datamine-root <dir> (required): path containing aces.vromfs.bin_u/gamedata/...
    - --vehicle <id> | --vehicles <glob>: vehicle id(s) or glob(s) under units/tankmodels/*.blkx
@@ -79,7 +79,7 @@ We’ll replace the app stage-by-stage with external command-line tools. Initial
 
 #### Rust project layout
 
-- Workspace fcs2/
+- Workspace tools/fcs/
    - crates/core/ (library):
       - vehicle.rs (load vehicle JSON, zooms/laser, weapon refs)
       - module.rs (load module JSON, projectile parsing)
@@ -104,13 +104,13 @@ We’ll replace the app stage-by-stage with external command-line tools. Initial
    - Link a Rust crate if licensing permits.
 - Versioning & caching:
    - Cache key: hash of important inputs (vehicle .blkx content; module .blkx content; units.csv key rows).
-   - Local manifest per output dir (e.g., .fcs2-cache.json) with datamine version, file mtimes/sizes and content hashes.
+   - Local manifest per output dir (e.g., .fcs-cache.json) with datamine version, file mtimes/sizes and content hashes.
    - Only reprocess changed dependencies; optional --force.
    - Nice-to-have: detect upstream datamine version (from a known manifest or tag) and include it in the output header.
 
 ### Milestone C — Stage 2 rewrite (Ballistic)
 
-- Deliverable: CLI fcs2 make-ballistic that consumes the JSON/legacy Data and emits Ballistic/<vehicle>/*.txt.
+- Deliverable: CLI fcs make-ballistic that consumes the JSON/legacy Data and emits Ballistic/<vehicle>/*.txt.
 - Goals: correctness parity, speed (parallel by projectile), and deterministic output.
 - Hook into HePenetration, DeMarre, APHE penalties, APDS/APFSDS rules; make constants configurable via a TOML.
 - WinForms change: Button2 calls the CLI.
@@ -119,6 +119,16 @@ We’ll replace the app stage-by-stage with external command-line tools. Initial
 
 - We’ll postpone rewriting sight generation. Once Stage 1/2 are done, we can thin the current WinForms layer to read our outputs and keep sight families working.
 - Eventually: port to a structured renderer with templates per family; keep localization loading explicit.
+
+### Validation corpus (TBD)
+
+- We’ll curate a representative set (1–2 per nation) covering:
+   - Primary gun + APHE
+   - APDS/APFSDS with ArmorPower series
+   - ATGM carrier with two rockets
+   - Vehicle with secondary optics
+   - SPAA / autocannon with Cx arrays
+- This corpus will drive the golden diff CI for Stage 1 and Stage 2.
 
 ## Acceptance criteria per milestone
 
@@ -138,10 +148,10 @@ We’ll replace the app stage-by-stage with external command-line tools. Initial
 ## WinForms integration details (near-term)
 
 - Add a config panel or appsettings JSON for:
-   - Tool path (fcs2.exe), datamine root, output roots, thread count.
+   - Tool path (fcs.exe), datamine root, output roots, thread count.
    - Logging verbosity.
 - Button1:
-   - Validate inputs; run fcs2 convert-datamine with args.
+   - Validate inputs; run fcs convert-datamine with args.
    - Stream logs to the UI; show a summary and clickable diff link on mismatches (optional).
    - Exit-code based success/failure handling.
 
@@ -150,3 +160,12 @@ We’ll replace the app stage-by-stage with external command-line tools. Initial
 - Once Stage 1 and 2 are external and robust, we can:
    - Add a minimal modern GUI (Rust + Tauri, or .NET MAUI) that orchestrates the CLIs.
    - Keep a headless CI path (CLI only) for reproducible builds.
+
+## Releases & packaging (lightweight)
+
+- Release when a milestone or self-contained feature lands; no fixed cadence needed.
+- Artifacts (Windows primary):
+   - `fcs-stage1-vX.Y.Z-win-x64.zip` — contains `fcs.exe`, LICENSE, README, CLI help
+   - `FCS-WinForms-vX.Y.Z-win-x64.zip` — WinForms app (may shell to `fcs.exe`)
+   - Checksums: `.sha256` per artifact
+- Optional Linux builds for `fcs` may be published when convenient.
