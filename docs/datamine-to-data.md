@@ -200,7 +200,7 @@ Mapping rules:
 - For arrays (cx, bulletName): take first logical entry; preserve the array too if helpful.
 - For APDS/APFSDS: collect all `ArmorPower{N}m` into `armorPowerSeries` regardless of the type prefix.
 
-From this JSON, emit the current .txt format deterministically (for interop) until Stage 2/3 are updated.
+From this JSON, emit the current .txt format deterministically (for interop) until Stage 2/3 are updated. See also CLI details in `docs/cli-stage1.md`.
 
 ## What to include now to reduce later lookups
 
